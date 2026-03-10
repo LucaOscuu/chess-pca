@@ -75,7 +75,14 @@ Figures will be saved to `data/outputs/`. Final figures intended for the thesis 
 | H1 | Structured Dimensional Reduction | EVR explained by PC1+PC2 vs. null models |
 | H2 | Stability of Latent Directions | Bootstrap cosine similarity of PCA components |
 | H3 | Behavioral Relevance | Geometric drift on PC1 (Δz1) across outcomes |
-| H3 | Empirical Attractor Basins | Residence time in outcome-aligned regions of latent space |
+
+---
+
+## Empirical Attractor Basins
+
+Beyond the three core hypotheses, the thesis provides a geometric interpretation of the latent space through residence-time analysis. For each trajectory, the residence share R(Ω) measures the fraction of moves spent inside a predefined region Ω of latent space.
+
+Results show large and systematic asymmetries between Win and Loss trajectories — up to 31 percentage points — confirming that strategic performance is governed by **where trajectories reside**, not by convergence to a fixed point.
 
 ---
 
