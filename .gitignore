@@ -33,7 +33,7 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
-*.ipynb
+
 
 # Data rigenerabili (cache + output)
 data/cache/
