@@ -75,7 +75,7 @@ Figures will be saved to `data/outputs/`. Final figures intended for the thesis 
 | H1 | Structured Dimensional Reduction | EVR explained by PC1+PC2 vs. null models |
 | H2 | Stability of Latent Directions | Bootstrap cosine similarity of PCA components |
 | H3 | Behavioral Relevance | Geometric drift on PC1 (Δz1) across outcomes |
-| H4 | Empirical Attractor Basins | Residence time in outcome-aligned regions of latent space |
+| H3 | Empirical Attractor Basins | Residence time in outcome-aligned regions of latent space |
 
 ---
 
