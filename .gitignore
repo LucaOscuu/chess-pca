@@ -1,17 +1,43 @@
 # Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
 
-# Env / IDE
+# Packaging / build artifacts  ← NUOVO: risolve egg-info
+*.egg-info/
+*.egg
+dist/
+build/
+wheels/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
 .venv/
-.vs/
+venv/
+env/
+
+# IDE / editor
 .vscode/
+.vs/
 .idea/
+*.suo
+*.user
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Data rigenerabili
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Data rigenerabili (cache + output)
 data/cache/
 data/outputs/
+
+# Tieni le figure finali se vuoi mostrarle su GitHub
+!data/outputs/final_figures/
