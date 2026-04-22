@@ -280,18 +280,31 @@ def run_figure_h3(
     plt.close(fig)
     print(f"✅ Saved: {p1.name}")
 
-    # ===== FIGURE 2: BOXPLOT =====
+    # ===== FIGURE 2: BOXPLOT (FORZATAMENTE CORRETTO) =====
+
+# ===== FIGURE 2: BOXPLOT (FORZATO) =====
     print("\n📊 Figure 2: Boxplot comparison...")
 
+    # CHIUDI TUTTO
+    plt.close('all')
+
+    # CREA NUOVA FIGURA
     fig, ax = plt.subplots(figsize=(10, 7))
 
-    draw_vals = df_h3.loc[df_h3["outcome"] == "Draw", "drift_z1"].to_numpy()
-    data_box = [w, draw_vals, l]
-    labels = ["Win", "Draw", "Loss"]
+    # ESTRAI DI NUOVO (assicurati che sia dal dataframe corretto)
+    win_vals = df_h3[df_h3["outcome"] == "Win"]["drift_z1"].values.copy()
+    draw_vals = df_h3[df_h3["outcome"] == "Draw"]["drift_z1"].values.copy()
+    loss_vals = df_h3[df_h3["outcome"] == "Loss"]["drift_z1"].values.copy()
 
-    ax.boxplot(
-        data_box,
-        labels=labels,
+    # STAMPA DI VERIFICA
+    print(f"  Win vals shape: {win_vals.shape}, median: {np.median(win_vals):.3f}")
+    print(f"  Draw vals shape: {draw_vals.shape}, median: {np.median(draw_vals):.3f}")
+    print(f"  Loss vals shape: {loss_vals.shape}, median: {np.median(loss_vals):.3f}")
+
+    # BOXPLOT
+    bp = ax.boxplot(
+        [win_vals, draw_vals, loss_vals],
+        labels=["Win", "Draw", "Loss"],
         showfliers=False,
         patch_artist=True,
         widths=0.6,
@@ -301,30 +314,34 @@ def run_figure_h3(
         capprops=dict(color="black", linewidth=1.5),
     )
 
-    ax.axhline(0.0, linestyle="--", linewidth=2, color="black", alpha=0.4, zorder=5)
+    ax.axhline(0.0, linestyle="--", linewidth=2, color="black", alpha=0.4)
     ax.set_ylabel("Δz₁", fontsize=13, fontweight="bold")
     ax.set_xlabel("Outcome", fontsize=13, fontweight="bold")
-    ax.set_title("H3: Drift Distribution by Outcome", fontsize=14, fontweight="bold", pad=15)
+    ax.set_title("H3: Drift Distribution by Outcome", fontsize=14, fontweight="bold")
     ax.grid(True, alpha=0.25, axis="y", linestyle="--", linewidth=0.5)
 
+    # Testo con statistiche
     y0, y1 = ax.get_ylim()
     y_pos = y0 + (y1 - y0) * 0.05
-    for i, (lab, stat) in enumerate(zip(["Win", "Draw", "Loss"], [stats_win, stats_draw, stats_loss]), 1):
-        ax.text(
-            i,
-            y_pos,
-            f"N={stat['N']:,}\nMedian={stat['median']:.2f}",
-            ha="center",
-            va="bottom",
-            fontsize=9,
-            bbox=dict(boxstyle="round,pad=0.5", facecolor="white", alpha=0.8, edgecolor="gray"),
-        )
+    for i, (lab, vals) in enumerate(zip(["Win", "Draw", "Loss"], [win_vals, draw_vals, loss_vals]), 1):
+        median_val = np.median(vals)
+        n_val = len(vals)
+        ax.text(i, y_pos, f"N={n_val:,}\nMedian={median_val:.2f}",
+                ha="center", va="bottom", fontsize=9,
+                bbox=dict(boxstyle="round,pad=0.5", facecolor="white", alpha=0.8))
 
     plt.tight_layout()
+
+    # SALVA
     p2 = out_dir / f"{save_prefix}_drift_boxplot.png"
     plt.savefig(p2, dpi=300, bbox_inches="tight")
     plt.close(fig)
-    print(f"✅ Saved: {p2.name}")
+
+    # VERIFICA FILE
+    if p2.exists():
+        print(f"✅ Saved: {p2.name} ({p2.stat().st_size} bytes)")
+    else:
+        print(f"❌ ERROR: {p2} not saved!")
 
     # ===== FIGURE 3: SCATTER =====
     print("\n📊 Figure 3: Drift vs game length...")
