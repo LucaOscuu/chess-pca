@@ -5,6 +5,11 @@ Code, generated data and results for the Master thesis
 (Luca Osculati, ESCP Business School, Master in Management – Grande École, 2026;
 supervisor: Prof. Hamed Ghiaie), and for the journal article that extends it (in preparation).
 
+<p align="center">
+  <img src="paper/figures/fig0_trajectories.png" width="900" alt="Average trajectories of won, drawn and lost chess games on the PCA map">
+</p>
+<p align="center"><em>Stockfish self-play (Fishtest, 9,999 games). Won, drawn and lost games follow different paths on the same map.</em></p>
+
 The method is general. We describe every state of a system with a fixed set of coordinates.
 We follow each trajectory (a game, a trader, a firm) through time.
 We compress all states with Principal Component Analysis (PCA) and obtain a map.
@@ -77,6 +82,7 @@ chess-pca/
 │   └── fred_macro_pca_2000_2010.py  FRED download + PCA trajectory (thesis illustration)
 │
 ├── pyproject.toml, requirements.txt
+├── LICENSE
 └── CITATION.cff
 ```
 
@@ -171,6 +177,10 @@ The numbers below are read directly from `data/outputs/`.
 For the interpretation and the limits of each result, see the thesis and the article.
 
 ---
+
+## License
+
+Code released under the MIT License (see `LICENSE`). Third-party data keep their original licences (see *Data sources*).
 
 ## Citation
 
