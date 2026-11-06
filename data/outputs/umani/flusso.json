@@ -1,0 +1,167 @@
+{
+  "n_partite_pool_per_corpus": 1993,
+  "M1_velocita": {
+    "classica vs veloci | svantaggio": {
+      "media_a": 0.9232,
+      "media_b": 0.8998,
+      "diff_b_meno_a": -0.0234,
+      "p_bilaterale": 0.0479
+    },
+    "classica vs veloci | pari": {
+      "media_a": 0.8193,
+      "media_b": 0.8117,
+      "diff_b_meno_a": -0.0076,
+      "p_bilaterale": 0.2595
+    },
+    "classica vs veloci | vantaggio": {
+      "media_a": 1.3335,
+      "media_b": 1.2395,
+      "diff_b_meno_a": -0.094,
+      "p_bilaterale": 0.002
+    },
+    "full vs classica | svantaggio": {
+      "media_a": 0.8795,
+      "media_b": 0.9232,
+      "diff_b_meno_a": 0.0437,
+      "p_bilaterale": 0.002
+    },
+    "full vs classica | pari": {
+      "media_a": 0.8226,
+      "media_b": 0.8193,
+      "diff_b_meno_a": -0.0033,
+      "p_bilaterale": 0.5389
+    },
+    "full vs classica | vantaggio": {
+      "media_a": 1.2323,
+      "media_b": 1.3335,
+      "diff_b_meno_a": 0.1012,
+      "p_bilaterale": 0.002
+    },
+    "full vs veloci | svantaggio": {
+      "media_a": 0.8795,
+      "media_b": 0.8998,
+      "diff_b_meno_a": 0.0203,
+      "p_bilaterale": 0.024
+    },
+    "full vs veloci | pari": {
+      "media_a": 0.8226,
+      "media_b": 0.8117,
+      "diff_b_meno_a": -0.0108,
+      "p_bilaterale": 0.0439
+    },
+    "full vs veloci | vantaggio": {
+      "media_a": 1.2323,
+      "media_b": 1.2395,
+      "diff_b_meno_a": 0.0072,
+      "p_bilaterale": 0.519
+    }
+  },
+  "M1_medie": {
+    "svantaggio": {
+      "classica": 0.6463,
+      "depth6": 0.5626,
+      "full": 0.5669,
+      "veloci": 0.6385
+    },
+    "pari": {
+      "classica": 0.6101,
+      "depth6": 0.6142,
+      "full": 0.5816,
+      "veloci": 0.6079
+    },
+    "vantaggio": {
+      "classica": 0.8787,
+      "depth6": 0.682,
+      "full": 0.7123,
+      "veloci": 0.8473
+    }
+  },
+  "M2_campo": {
+    "classica vs veloci": {
+      "n": 2045,
+      "dist_oss": 0.00226,
+      "null_med": 0.00066,
+      "null_p95": 0.00092,
+      "rapporto_oss_null": 3.44,
+      "p": 0.002
+    },
+    "classica vs full": {
+      "n": 2495,
+      "dist_oss": 0.00346,
+      "null_med": 0.00049,
+      "null_p95": 0.00069,
+      "rapporto_oss_null": 7.07,
+      "p": 0.002
+    },
+    "veloci vs full": {
+      "n": 2045,
+      "dist_oss": 0.00534,
+      "null_med": 0.00055,
+      "null_p95": 0.00079,
+      "rapporto_oss_null": 9.67,
+      "p": 0.002
+    },
+    "full vs depth6": {
+      "n": 1991,
+      "dist_oss": 0.02529,
+      "null_med": 0.00049,
+      "null_p95": 0.00067,
+      "rapporto_oss_null": 51.52,
+      "p": 0.002
+    },
+    "classica vs depth6": {
+      "n": 1991,
+      "dist_oss": 0.03374,
+      "null_med": 0.0006,
+      "null_p95": 0.00083,
+      "rapporto_oss_null": 56.08,
+      "p": 0.002
+    }
+  },
+  "M3_direzione_u": [
+    0.836,
+    0.548
+  ],
+  "M3_impulso": {
+    "classica": {
+      "n_partite_con_impulso": 1249,
+      "proj_dopo_impulso": 0.2476,
+      "ic95": [
+        0.2267,
+        0.2673
+      ],
+      "proj_senza_impulso": -0.055
+    },
+    "veloci": {
+      "n_partite_con_impulso": 1026,
+      "proj_dopo_impulso": 0.2277,
+      "ic95": [
+        0.2072,
+        0.2474
+      ],
+      "proj_senza_impulso": -0.0428
+    },
+    "full": {
+      "n_partite_con_impulso": 4941,
+      "proj_dopo_impulso": 0.225,
+      "ic95": [
+        0.2164,
+        0.2333
+      ],
+      "proj_senza_impulso": -0.0615
+    },
+    "depth6": {
+      "n_partite_con_impulso": 996,
+      "proj_dopo_impulso": 0.1421,
+      "ic95": [
+        0.1244,
+        0.1602
+      ],
+      "proj_senza_impulso": -0.065
+    }
+  },
+  "M3_veloci_meno_classica": {
+    "diff": -0.0199,
+    "p_bilaterale": 0.1879
+  }
+}

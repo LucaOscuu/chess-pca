@@ -4,8 +4,11 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "chess-pca"
-version = "0.1.0"
+version = "0.2.0"
+description = "Trajectory maps of strategic systems: PCA on state trajectories, applicability conditions and occupancy tests"
+readme = "README.md"
 requires-python = ">=3.9"
+authors = [{ name = "Luca Osculati" }]
 
 [tool.setuptools]
 package-dir = {"" = "src"}

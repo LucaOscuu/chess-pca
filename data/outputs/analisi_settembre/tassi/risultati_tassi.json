@@ -1,0 +1,139 @@
+{
+  "Y1": {
+    "autovalori": [
+      7.7869,
+      0.2011,
+      0.0094,
+      0.0019,
+      0.0003,
+      0.0002,
+      0.0001,
+      0.0001
+    ],
+    "quota_varianza": [
+      0.9734,
+      0.0251,
+      0.0012,
+      0.0002,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "gap_piano": 0.19171077227818295,
+    "loading_PC1": [
+      0.349,
+      0.352,
+      0.355,
+      0.358,
+      0.358,
+      0.355,
+      0.353,
+      0.349
+    ],
+    "loading_PC2": [
+      -0.49,
+      -0.417,
+      -0.288,
+      -0.064,
+      0.071,
+      0.286,
+      0.398,
+      0.504
+    ],
+    "split_mediana": 3.783775315921043,
+    "split_p95": 9.194331389150626
+  },
+  "Y2": {
+    "strumento": {
+      "S1-S2 (corr vs cov)": 1.7052012735563078,
+      "S1-S3 (livelli vs variazioni)": 14.347370126544904,
+      "S1-S4 (livelli vs spread)": 17.838198781588833
+    },
+    "sistema_P1_vs_P2": {
+      "angolo": 8.605988280173694,
+      "null_p95": 9.325976829688686,
+      "p": 0.06693306693306693
+    },
+    "ipotesi_strumento_supera_sistema": true
+  },
+  "Y3": {
+    "calo_varianza": {
+      "R_3M": 0.9994588924988244,
+      "R_6M": 0.9988826027327729
+    },
+    "corr_3M_10Y_pre": 0.8997004241879402,
+    "corr_3M_10Y_ZLB": 0.3651194878615773,
+    "angolo_pre_vs_ZLB": {
+      "angolo": 13.30235426183918,
+      "null_p95": 15.761200284382179,
+      "p": 0.0939060939060939
+    },
+    "correlazioni_pre": {
+      "R_3M": 0.9,
+      "R_6M": 0.914,
+      "R_1Y": 0.934,
+      "R_2Y": 0.963,
+      "R_3Y": 0.977,
+      "R_5Y": 0.994,
+      "R_7Y": 0.998,
+      "R_10Y": 1.0
+    },
+    "correlazioni_ZLB": {
+      "R_3M": 0.365,
+      "R_6M": 0.399,
+      "R_1Y": 0.615,
+      "R_2Y": 0.858,
+      "R_3Y": 0.916,
+      "R_5Y": 0.981,
+      "R_7Y": 0.994,
+      "R_10Y": 1.0
+    },
+    "previsione_1": true,
+    "previsione_2": true,
+    "previsione_3": false
+  },
+  "Y4": {
+    "S1": {
+      "componente_pendenza": "PC2",
+      "quota_prima_di_ogni_recessione": [
+        0.8333333333333334,
+        1.0,
+        1.0
+      ],
+      "quota_altri_mesi": 0.17559523809523808,
+      "robusto": true
+    },
+    "S2": {
+      "componente_pendenza": "PC2",
+      "quota_prima_di_ogni_recessione": [
+        0.8333333333333334,
+        1.0,
+        1.0
+      ],
+      "quota_altri_mesi": 0.17559523809523808,
+      "robusto": true
+    },
+    "S4": {
+      "componente_pendenza": "PC1",
+      "quota_prima_di_ogni_recessione": [
+        0.8333333333333334,
+        0.75,
+        1.0
+      ],
+      "quota_altri_mesi": 0.18452380952380953,
+      "robusto": true
+    },
+    "S3": {
+      "componente_pendenza": "PC2",
+      "quota_prima_di_ogni_recessione": [
+        0.08333333333333333,
+        0.5,
+        0.08333333333333333
+      ],
+      "quota_altri_mesi": 0.2537313432835821,
+      "robusto": false
+    },
+    "criterio_S1_S2_S4": true
+  }
+}

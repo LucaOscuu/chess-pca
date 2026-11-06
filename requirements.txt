@@ -1,7 +1,12 @@
 numpy
 pandas
+scipy
 matplotlib
 scikit-learn
 tqdm
 python-chess
 pyarrow
+joblib
+pyreadr      # R data files (RPS humans, yield curve)
+requests     # FRED download (scripts/fred_macro_pca_2000_2010.py)
+treys        # poker hand evaluation (exploratory)

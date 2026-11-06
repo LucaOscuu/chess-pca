@@ -1,0 +1,19 @@
+{
+  "antichess": {
+    "coppie": 1987,
+    "angolo": 72.1469966792979,
+    "p_appaiato": 0.000999000999000999,
+    "p95_appaiato": 9.789076982734471,
+    "p_non_appaiato": 0.000999000999000999,
+    "p95_non_appaiato": 9.754069051980622
+  },
+  "3check": {
+    "coppie": 1720,
+    "angolo": 32.30012547960988,
+    "p_appaiato": 0.000999000999000999,
+    "p95_appaiato": 15.750053380132217,
+    "p_non_appaiato": 0.000999000999000999,
+    "p95_non_appaiato": 18.286628042491785
+  },
+  "ipotesi": true
+}

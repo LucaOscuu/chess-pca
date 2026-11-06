@@ -1,0 +1,31 @@
+{
+  "random": {
+    "coppie": 396,
+    "angolo": 32.273033933224745,
+    "p_appaiato": 0.000999000999000999,
+    "p95_appaiato": 20.728325580064304,
+    "p_non_appaiato": 0.000999000999000999,
+    "p95_non_appaiato": 21.93980050603985
+  },
+  "depth1": {
+    "coppie": 1681,
+    "angolo": 18.36271795444167,
+    "p_appaiato": 0.004995004995004995,
+    "p95_appaiato": 13.840934043339745,
+    "p_non_appaiato": 0.006993006993006993,
+    "p95_non_appaiato": 14.503528447178747
+  },
+  "3check": {
+    "coppie": 1256,
+    "angolo": 21.292560292797102,
+    "p_appaiato": 0.000999000999000999,
+    "p95_appaiato": 12.733200813094141,
+    "p_non_appaiato": 0.000999000999000999,
+    "p95_non_appaiato": 13.024387902609702
+  },
+  "holm_appaiato": {
+    "random": true,
+    "3check": true,
+    "depth1": true
+  }
+}

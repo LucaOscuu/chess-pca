@@ -1,0 +1,27 @@
+{
+ "D1_tutti": {
+  "diff": -0.106,
+  "deb_dopo_pos": -0.172,
+  "deb_dopo_neg": -0.066,
+  "p": 0.0215,
+  "n": 24688
+ },
+ "D2_alta_abilita": {
+  "diff": -0.002,
+  "deb_dopo_pos": -0.153,
+  "deb_dopo_neg": -0.151,
+  "p": 0.983,
+  "n": 12296
+ },
+ "D2_bassa_abilita": {
+  "diff": -0.21,
+  "deb_dopo_pos": -0.191,
+  "deb_dopo_neg": 0.019,
+  "p": 0.003,
+  "n": 12392
+ },
+ "D2_alta_meno_bassa": {
+  "diff": 0.208,
+  "p": 0.0839
+ }
+}

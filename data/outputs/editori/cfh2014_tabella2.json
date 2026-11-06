@@ -1,0 +1,17 @@
+{
+ "fonte": "Cason, Friedman & Hopkins (2014), Review of Economic Studies 81(1), Tabella 2: medie osservate (Rock, Paper, Scissors) e valori teorici. Trascritta il 10/10/2026 dal PDF Essex repository 29724.",
+ "nash": [0.25, 0.25, 0.50],
+ "tasp_Ua": [0.242, 0.31, 0.449],
+ "tasp_Ub": [0.31, 0.242, 0.449],
+ "trattamenti": {
+  "S Continuous-Instant": [0.226, 0.269, 0.504],
+  "S Continuous-Slow": [0.236, 0.265, 0.500],
+  "S Discrete-Mixed": [0.242, 0.294, 0.464],
+  "S Discrete-Pure": [0.247, 0.320, 0.433],
+  "Ua Continuous-Instant": [0.247, 0.318, 0.435],
+  "Ua Continuous-Slow": [0.228, 0.281, 0.491],
+  "Ua Discrete-Mixed": [0.225, 0.342, 0.433],
+  "Ua Discrete-Pure": [0.205, 0.337, 0.458],
+  "Ub Continuous-Slow": [0.303, 0.240, 0.457]
+ }
+}

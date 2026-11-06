@@ -1,49 +1,184 @@
-# Chess PCA — Morphological Framework
+# chess-pca — Trajectory maps of strategic systems
 
-Replication code for the Master thesis *"Morphological Modelling for Strategic Intelligence"*.  
-The pipeline extracts per-move positional features from PGN game files and applies a unified Principal Component Analysis to study game trajectories across outcomes and player perspectives.
+Code, generated data and results for the Master thesis
+**"Morphological Modelling for Strategic Intelligence"**
+(Luca Osculati, ESCP Business School, Master in Management – Grande École, 2026;
+supervisor: Prof. Hamed Ghiaie), and for the journal article that extends it (in preparation).
 
-> **Abstract** — This thesis studies whether strategic decision-making in high-dimensional environments can be represented through reduced geometric structure, complementing classical equilibrium analysis under practical computational limits. Using Stockfish self-play chess as an empirical laboratory, the results show that strategic dynamics admit a stable low-dimensional morphology: variance concentrates in a small set of latent directions that remain robust under substantial resampling. Although the latent space is estimated without outcome labels, projected trajectories display systematic regional organization across outcomes (Win/Draw/Loss), consistent with Empirical Attractor Basins.
-## Project structure
+The method is general. We describe every state of a system with a fixed set of coordinates.
+We follow each trajectory (a game, a trader, a firm) through time.
+We compress all states with Principal Component Analysis (PCA) and obtain a map.
+Then we ask two questions:
+
+1. **Attribution.** Does the map belong to the system, or to the instrument we used to observe it?
+2. **Occupancy.** Do trajectories that end well spend more time in some regions of the map?
+
+Chess is the main laboratory, because we can change the objective of the game while keeping the
+instrument fixed (standard chess, Three-Check, Antichess). The same tools are then applied to
+other environments: Rock-Paper-Scissors, Selten's horse, experimental asset markets, human games,
+and exploratory economic data.
+
+---
+
+## Repository structure
 
 ```text
 chess-pca/
+├── src/chess_pca/                 Python package (core pipeline + all analyses)
+│   ├── pipeline.py                End-to-end pipeline: PGN → features → unified PCA → figures
+│   ├── io_pgn.py                  Streaming reader for .pgn / .pgn.gz files
+│   ├── features.py                18 positional coordinates per ply (python-chess)
+│   ├── analysis.py, plotting.py   PCA and trajectory utilities
+│   ├── figure_h1.py … figure_h4_residence.py, figure_loadings.py
+│   │                              Thesis figures (spectrum vs nulls, bootstrap stability,
+│   │                              drift on PC1, residence in regions, loadings)
+│   │
+│   ├── generate_random_corpus.py  Comparison corpora: random mover,
+│   ├── generate_engine_corpus.py  Stockfish at depth 1 / 3 / 6,
+│   ├── generate_variant_corpus.py chess variants (Three-Check, Antichess)
+│   ├── extract_openings.py        Shared opening book (paired design across corpora)
+│   │
+│   ├── test_a1_temporal.py        Applicability conditions A1–A6:
+│   ├── check_phi_validity.py      temporal order, meaning of the coordinates,
+│   ├── a2_partial.py              spectrum vs sampling noise, sample stability,
+│   ├── test_a5_stability.py       identifiability of the axes
+│   ├── final_conditions.py, final_calibration.py, diagnostics.py
+│   ├── permutation_contrasts.py   Permutation test of plane rotation between corpora
+│   ├── recompute_grouped.py       Nulls recomputed with resampling grouped by game
+│   ├── feature_leverage.py        Leverage of each single coordinate on the map
+│   ├── occupancy_grouped.py       Occupancy test with game-grouped placebo
+│   ├── run_t6.py, t9_fast.py, angle_null.py, …   Supporting diagnostics
+│   │
+│   ├── umani/                     Human games (classical vs rapid/blitz) vs engine
+│   ├── mercati/                   Experimental asset markets (trader trajectories)
+│   ├── poker/                     Exploratory: online poker hand histories
+│   └── analisi_settembre/         Exploratory: firms, US yield curve, compute trend
+│
 ├── data/
-│   ├── raw/                # Input PGN / PGN.GZ files (not tracked by git)
-│   └── cache/              # Cached parquet datasets (not tracked by git)
-├── outputs/
-│   └── final_figures/      # Final figures committed to the repo
+│   ├── raw/fishtest_2018/         Stockfish self-play games from Fishtest (main corpus)
+│   ├── *.pgn, openings.txt        Generated corpora (random, depth 1/3/6, variants) + opening book
+│   └── outputs/                   All numerical results (.json / .csv) and result figures
+│       ├── editori/               Rock-Paper-Scissors and Selten's horse (scripts + results)
+│       ├── occupancy_grouped/, umani/, mercati/, poker/, analisi_settembre/, h4_residence/
+│       ├── macro_2008/            Thesis illustration: FRED indicators 2000–2010
+│       └── PREREG_*.md / PREDIZIONI_*.md   Predictions written before each test was run
+│
+├── paper/
+│   ├── tools/                     Scripts that build every figure of the article
+│   ├── figures/                   Final figures (PDF + PNG)
+│   └── numbers.tex                Every number used in the article, generated by make_numbers.py
+│
+├── notebooks/
+│   ├── results_overview.ipynb     Visual overview of the thesis results (thesis framing, H1–H4)
+│   └── thesis/                    Original thesis notebooks (chess analysis, 2008 illustration)
+│
 ├── scripts/
-│   └── run_pipeline.py     # Entry point to run the full pipeline
-├── src/
-│   └── chess_pca/
-│       ├── pipeline.py         # End-to-end orchestration
-│       ├── io_pgn.py           # PGN / PGN.GZ streaming ingestion
-│       ├── features.py         # Feature extraction (python-chess)
-│       ├── analysis.py         # PCA + trajectory utilities
-│       ├── plotting.py         # Shared plotting utilities
-│       ├── figure_loadings.py  # Loading tables and profiles (PC1/PC2)
-│       ├── figure_h1.py        # Scree plot + null models for EVR (PC1+PC2)
-│       ├── figure_h2.py        # Bootstrap stability of PCA components
-│       ├── figure_h3.py        # Geometric drift on PC1 (Δz1)
-│       └── figure_h4_residence.py # Residence time in attractor basins
+│   ├── run_pipeline.py            Entry point for the full thesis pipeline
+│   └── fred_macro_pca_2000_2010.py  FRED download + PCA trajectory (thesis illustration)
+│
+├── pyproject.toml, requirements.txt
+└── CITATION.cff
 ```
+
+Some file and folder names, and the pre-registration notes, are in Italian
+(`umani` = humans, `mercati` = markets, `editori` = guest-editor benchmark games,
+`analisi_settembre` = September analyses, `PREDIZIONI` = predictions, `risultati` = results).
+
+---
 
 ## Setup
 
 Requires **Python 3.9+**.
 
 ```bash
-# 1. Create and activate a virtual environment
 python -m venv .venv
-
-# Windows:
-.venv\Scripts\activate
-# macOS / Linux:
-source .venv/bin/activate
-
-# 2. Install dependencies
+# Windows: .venv\Scripts\activate      macOS / Linux: source .venv/bin/activate
 pip install -r requirements.txt
-
-# 3. Install the package in editable mode
 pip install -e .
+```
+
+Generating new engine or variant corpora also needs a Stockfish binary
+(<https://stockfishchess.org/download/>), passed with `--engine`.
+
+## Reproducing the results
+
+**1. Main chess pipeline (thesis).**
+
+```bash
+python scripts/run_pipeline.py
+```
+
+This reads the games in `data/raw/`, extracts the 18 coordinates for every ply
+(White and Black perspectives), caches them in `data/cache/` as parquet, fits the unified PCA
+and writes figures and tables to `data/outputs/`.
+
+**2. Comparison corpora.** For example:
+
+```bash
+python src/chess_pca/generate_engine_corpus.py --depth 6 --games 2000 \
+    --engine path/to/stockfish --match-openings data/openings.txt \
+    --out data/engine_d6.pgn
+```
+
+The corpora used in the article are already in `data/` (see `data/README.md`).
+The random and engine corpora share the same opening book, so their comparisons are paired by opening.
+
+**3. Tests and figures.** Each script in `src/chess_pca/` writes its results to `data/outputs/`.
+Each script in `paper/tools/` rebuilds one figure of the article from those results and checks
+its numbers against `paper/numbers.tex`.
+
+> Note: the exploratory scripts in `umani/`, `mercati/`, `poker/` and `analisi_settembre/`
+> read their inputs from a local `work/` folder. Put the source data there (see below)
+> or edit the path at the top of the script.
+
+## The 18 coordinates
+
+`material`, `mobility`, `captures_avail`, `checks_avail`, `attack_overlap`, `hanging_diff`,
+`center_core`, `center_ext`, `king_safety_diff`, `pawns_doubled_diff`, `pawns_isolated_diff`,
+`pawns_passed_diff`, `cnt_pawn`, `cnt_knight`, `cnt_bishop`, `cnt_rook`, `cnt_queen`,
+`delta_mobility`. All are computed from the point of view of the side to evaluate.
+See `src/chess_pca/features.py`.
+
+---
+
+## Data sources
+
+| Data | Where | Source and licence |
+|---|---|---|
+| Stockfish self-play, 2018 | `data/raw/fishtest_2018/` | Fishtest, the Stockfish testing framework (<https://tests.stockfishchess.org>) |
+| Random mover, Stockfish depth 1/3/6, Three-Check, Antichess | `data/*.pgn` | Generated with the scripts in this repository |
+| Human Rock-Paper-Scissors | `data/outputs/editori/rps_umani/WXZ2014.rda` | Wang, Xu & Zhou (2014), distributed with the R package `stratEst`, CC BY 4.0 (licence file included) |
+| Human chess games (FIDE ≥ 2400) | not included | Lichess broadcasts of over-the-board events; rebuild with `umani/build_human.py` |
+| Experimental asset markets | not included | Huber et al. (2024), public replication package on OSF; see `mercati/build_panel.py` |
+| Firms (exploratory) | not included | Lombardo et al. (2022), *Future Internet* 14(8):244 |
+| US yield curve, macro indicators (exploratory) | not included / downloaded | `FedYieldCurve` (R) and FRED |
+
+Third-party data are not redistributed here when their licence is unclear.
+The scripts show exactly how each panel is built from the public source.
+
+## Main results at a glance
+
+The numbers below are read directly from `data/outputs/`.
+
+- **Plane rotation between corpora** (`permutation_contrasts.csv`, 1,000 permutations, grouped by game):
+  random vs depth 6 = 33.4°, Three-Check vs depth 6 = 22.8°, Fishtest vs depth 6 = 22.5°,
+  depth 1 vs depth 6 = 21.4°, depth 3 vs depth 6 = 15.6°. All are above their null.
+- **Single-coordinate leverage** (`feature_leverage_depth6.csv`): some coordinates rotate the map
+  as much as, or more than, a change of system. The map belongs to the pair *system + instrument*.
+- **Objective change** (`a2_partial_*.csv`): when the objective is inverted (Antichess), the link
+  between coordinates and outcome reverses for some coordinates; with Three-Check it does not.
+
+For the interpretation and the limits of each result, see the thesis and the article.
+
+---
+
+## Citation
+
+If you use this code, please cite the thesis (see `CITATION.cff`):
+
+> Osculati, L. (2026). *Morphological Modelling for Strategic Intelligence*.
+> Master thesis, ESCP Business School.
+
+## Contact
+
+Luca Osculati — luca.osculati@edu.escp.eu

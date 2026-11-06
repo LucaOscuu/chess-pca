@@ -1,0 +1,65 @@
+{
+ "fonte": "Neugebauer, Sadrieh & Selten (2025), Games and Economic Behavior 150: 71-92. PDF ORBilu 10993/66083. Citazioni estratte dal testo del PDF il 10/10/2026 (estrazione automatica del testo, non lettura a occhio: ricontrollare le pagine sul PDF prima dell'invio). La Fig. 1 (albero) non e' leggibile nel testo estratto.",
+ "strangers_lungo_periodo": {
+  "p1_R": 0.5,
+  "p3_R": 0.7,
+  "p2_R_min": 0.3,
+  "p2_R_max": 0.4,
+  "citazioni": [
+   "p. 80: \"with p1 hovering around 50% and p3 around 70%\"",
+   "p. 79: \"remaining close to the lower bound of the imperfect equilibrium strategy, in the range between 30% and 40%\""
+  ]
+ },
+ "partners_lungo_periodo": {
+  "descrizione": "convergono verso le strategie dell'equilibrio imperfetto (p1 verso 0, p3 verso 1)",
+  "citazioni": [
+   "p. 80: \"trajectories of observed play in the long-run partners treatment seem to converge on the imperfect equilibrium strategies\"",
+   "p. 80: \"with p1 approaching 0% and p3 approaching 100%\""
+  ]
+ },
+ "frequenza_esito_imperfetto_z2": {
+  "partners": 0.734,
+  "strangers_lungo": 0.409,
+  "strangers_breve": 0.368,
+  "citazione": "p. 74",
+  "testo": "p. 74: \"The average relative frequency of obtaining the imperfect equilibrium outcome z2 is 0.734 in the partners treatment\" (il testo non dice se la frequenza e' su periodi o su giocate)"
+ },
+ "frequenza_esito_perfetto_z5": {
+  "partners": 0.099,
+  "strangers_lungo": 0.156,
+  "strangers_breve": 0.169,
+  "citazione": "p. 74"
+ },
+ "impulse_response": {
+  "passo": 0.01,
+  "periodi_convergenza": 165,
+  "citazioni": [
+   "p. 78: \"The step length in our case is ri(t) = .01.\"",
+   "p. 79: \"all simulated impulse response trajectories converge on the impulse balance point\"",
+   "p. 79: \"the 165 periods needed for convergence in the simulation\"",
+   "p. 79: \"the thus encountered impulse balance point equals the trembling-hand perfect pure strategy equilibrium\""
+  ]
+ },
+ "conclusione": "p. 86: \"but neither can fully account for the dynamics of behavior.\"",
+ "albero": "p. 72: \"(R, L, R) leads to the payoff triple [4, 4, 0]\"; gli altri payoff terminali sono solo nella Fig. 1",
+ "equilibri": {
+  "citazioni": [
+   "p. 72: \"Trembling-hand perfect equilibria p1 = 1, p2 = 1, 0 ≤ p3 ≤ 1/4\"",
+   "p. 72: \"Imperfect equilibria p1 = 0, 1/3 ≤ p2 ≤ 1, p3 = 1\"",
+   "p. 72: \"Every player has exactly one information set.\""
+  ]
+ },
+ "reinforcement": "p. 81: \"Reinforcement learning (Erev and Roth 1998) offers an alternative concept for the dynamics of play\"",
+ "abstract_repec": {
+  "fonte": "Abstract su RePEc/IDEAS (eee:gamebe:v150:y:2025:i:c:p:71-92), letto il 18/10/2026 in due letture web indipendenti (verifica e revisione). Solo frammenti verbatim brevi; il resto e' parafrasi. Ricontrollare sul PDF prima dell'invio.",
+  "frammenti_verbatim": [
+   "\"experimentally examines the predictive power of the trembling-hand perfect equilibrium concept\"",
+   "\"initially appear to favor an imperfect equilibrium\"",
+   "\"first 50 periods\"",
+   "\"settle at a non-equilibrium distribution of strategies\"",
+   "\"leans toward efficient outcomes\""
+  ],
+  "parafrasi": "All'inizio i dati sembrano favorire un equilibrio imperfetto; traiettorie di impulse response che convergono all'equilibrio perfetto seguono la dinamica dei primi ~50 periodi meglio del reinforcement learning; su orizzonti piu' lunghi (fino a 250 periodi) il comportamento sembra assestarsi su una distribuzione di non equilibrio che pende verso esiti efficienti.",
+  "uso_nel_paper": "La frase sul lungo periodo vale per gli strangers: i partners convergono verso l'equilibrio imperfetto (p. 80, sopra). Nel paper: 'in long sessions with strangers ... partners move toward the imperfect equilibrium'."
+ }
+}

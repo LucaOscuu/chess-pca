@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it as below."
+title: "chess-pca: Trajectory maps of strategic systems"
+authors:
+  - family-names: Osculati
+    given-names: Luca
+    affiliation: "ESCP Business School"
+date-released: 2026-11-06
+version: 0.2.0
+repository-code: "https://github.com/LucaOscuu/chess-pca"
+references:
+  - type: thesis
+    title: "Morphological Modelling for Strategic Intelligence"
+    authors:
+      - family-names: Osculati
+        given-names: Luca
+    institution:
+      name: "ESCP Business School"
+    thesis-type: "Master thesis"
+    year: 2026

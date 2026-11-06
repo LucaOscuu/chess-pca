@@ -1,0 +1,80 @@
+{
+ "solo_decisive": {
+  "classica vs veloci": {
+   "n": 1195,
+   "dist_oss": 0.00157,
+   "null_med": 0.00109,
+   "null_p95": 0.00149,
+   "rapporto_oss_null": 1.43,
+   "p": 0.0259
+  },
+  "classica vs full": {
+   "n": 1195,
+   "dist_oss": 0.00487,
+   "null_med": 0.00093,
+   "null_p95": 0.0013,
+   "rapporto_oss_null": 5.24,
+   "p": 0.002
+  },
+  "veloci vs full": {
+   "n": 1470,
+   "dist_oss": 0.00763,
+   "null_med": 0.00072,
+   "null_p95": 0.00102,
+   "rapporto_oss_null": 10.62,
+   "p": 0.002
+  }
+ },
+ "righe_10_40": {
+  "classica vs veloci": {
+   "n": 2045,
+   "dist_oss": 0.0034,
+   "null_med": 0.00092,
+   "null_p95": 0.00131,
+   "rapporto_oss_null": 3.69,
+   "p": 0.002
+  },
+  "classica vs full": {
+   "n": 2495,
+   "dist_oss": 0.00228,
+   "null_med": 0.00072,
+   "null_p95": 0.00107,
+   "rapporto_oss_null": 3.15,
+   "p": 0.002
+  },
+  "veloci vs full": {
+   "n": 2045,
+   "dist_oss": 0.00621,
+   "null_med": 0.00086,
+   "null_p95": 0.00117,
+   "rapporto_oss_null": 7.25,
+   "p": 0.002
+  }
+ },
+ "decisive_e_10_40": {
+  "classica vs veloci": {
+   "n": 1195,
+   "dist_oss": 0.00212,
+   "null_med": 0.00147,
+   "null_p95": 0.00215,
+   "rapporto_oss_null": 1.44,
+   "p": 0.0579
+  },
+  "classica vs full": {
+   "n": 1195,
+   "dist_oss": 0.0049,
+   "null_med": 0.00137,
+   "null_p95": 0.00197,
+   "rapporto_oss_null": 3.58,
+   "p": 0.002
+  },
+  "veloci vs full": {
+   "n": 1470,
+   "dist_oss": 0.00584,
+   "null_med": 0.00113,
+   "null_p95": 0.00161,
+   "rapporto_oss_null": 5.19,
+   "p": 0.002
+  }
+ }
+}

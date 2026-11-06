@@ -1,0 +1,42 @@
+{
+  "esiti": {
+    "depth6": {
+      "D": 0.438,
+      "L": 0.294,
+      "W": 0.268
+    },
+    "full": {
+      "D": 0.708,
+      "L": 0.185,
+      "W": 0.107
+    },
+    "classica": {
+      "D": 0.521,
+      "L": 0.291,
+      "W": 0.188
+    },
+    "veloci": {
+      "L": 0.39,
+      "W": 0.329,
+      "D": 0.281
+    }
+  },
+  "obiettivo": {
+    "classica": {
+      "r_material_esito": 0.19,
+      "inv_parziali": [],
+      "inv_grezze": []
+    },
+    "veloci": {
+      "r_material_esito": 0.233,
+      "inv_parziali": [],
+      "inv_grezze": []
+    },
+    "full": {
+      "r_material_esito": 0.227,
+      "inv_parziali": [],
+      "inv_grezze": []
+    },
+    "depth6_r_material_esito": 0.546
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "verifica_AUC_puntuali (nuovo, originale)": {
+    "shared": [
+      0.61,
+      0.61
+    ],
+    "second": [
+      0.693,
+      0.693
+    ],
+    "map1_PC1": [
+      0.696,
+      0.696
+    ]
+  },
+  "delta1_seconda_meno_condivisa": {
+    "stima": 0.08287069468768238,
+    "IC95": [
+      0.049708336055654834,
+      0.11953601994364978
+    ]
+  },
+  "delta2_PC1map1_meno_condivisa": {
+    "stima": 0.08637769994162292,
+    "IC95": [
+      0.03209853396578111,
+      0.14381714165909712
+    ]
+  },
+  "criterio": true,
+  "stabilita_20_split": {
+    "delta1": {
+      "mediana": 0.06634044080583451,
+      "min": 0.020904471271475877,
+      "quota_positivi": 1.0
+    },
+    "delta2": {
+      "mediana": 0.06368521491635948,
+      "min": 0.015051079976649118,
+      "quota_positivi": 1.0
+    }
+  }
+}

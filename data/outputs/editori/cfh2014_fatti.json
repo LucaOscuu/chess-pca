@@ -1,0 +1,30 @@
+{
+ "fonte": "Cason, Friedman & Hopkins (2014), Review of Economic Studies 81(1). PDF Essex repository 29724 (versione circolata). Citazioni estratte dal testo del PDF il 10/10/2026 (estrazione automatica: ricontrollare a occhio prima dell'invio). Le pagine sono quelle del PDF del repository, non della rivista.",
+ "cicli_nel_gioco_stabile": [
+  "p. 17: \"But the amplitudes do not decline to zero;\"",
+  "p. 18: \"Surprisingly, we also found very persistent cycles for Stable matrices,\""
+ ],
+ "giochi_instabili": [
+  "p. 14: \"in all cases the deviations are in the direction of TASP\"",
+  "p. 14: \"Rejection the TASP predictions occurs in only 2 of the 5 cases.\""
+ ],
+ "continuous_slow": "p. 7: \"the rate is such that it would take 10 seconds to move from one vertex to another.\"",
+ "nota": "Che Nash sia rifiutato in tutti e quattro i trattamenti stabili non e' confermato da una citazione verbatim: non scriverlo nel paper finche' non e' controllato sul PDF.",
+ "gruppi_e_matching": [
+  "p. 1: \"Each moment, each player is matched against the entire population, here 8 human subjects.\"",
+  "p. 7: \"Subjects participated in groups of 8 and played the three game matrices Ua, S and Ub\""
+ ],
+ "tasp": [
+  "p. 4: \"the time average of play will converge to a point that they name the TASP (Time Average of the Shapley Polygon),\"",
+  "p. 4: \"It is clearly distinct from the Nash equilibrium of the game\""
+ ],
+ "dinamica_logit": [
+  "p. 6: \"average frequencies will evolve according to the perturbed best response (PBR) dynamics\"",
+  "p. 21: \"Perturbed best response choice functions such as the logit are typically parameterized\""
+ ],
+ "abstract_repec": {
+  "fonte": "Abstract su RePEc/IDEAS (oup:restud:v81:y:2014:i:1:p:112-136), letto il 18/10/2026 in due letture web indipendenti. Parafrasi, non verbatim.",
+  "parafrasi": "Nel trattamento continuo lento la composizione della popolazione mostra cicli netti; con aggiustamento istantaneo i cicli sono piu' erratici; nei trattamenti di controllo a tempo discreto i cicli sono deboli o assenti. Nash approssima bene il gioco medio; il TASP coglie alcune regolarita' che Nash non coglie.",
+  "uso_nel_paper": "Scrivere 'in continuous time play keeps cycling' (non in generale) e, per il gioco instabile, 'average play deviates from Nash in the direction of the TASP' (p. 14, sopra). Non scrivere che la media e' piu' vicina al TASP che a Nash: e' un nostro calcolo sulla Tabella 2 (REGISTRO_EDITORI), 4 casi su 5."
+ }
+}

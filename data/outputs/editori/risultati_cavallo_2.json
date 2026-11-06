@@ -1,0 +1,55 @@
+{
+ "evr_comune_PC1_PC2": 0.9092533189476705,
+ "evr_PC1": 0.5419544436609801,
+ "evr_PC2": 0.36729887528669036,
+ "loadings_PC1": {
+  "p1": -0.47,
+  "p2": -0.53,
+  "p3": -0.04,
+  "u1": -0.42,
+  "u2": -0.43,
+  "u3": -0.37
+ },
+ "loadings_PC2": {
+  "p1": -0.27,
+  "p2": -0.16,
+  "p3": 0.61,
+  "u1": 0.42,
+  "u2": 0.4,
+  "u3": -0.44
+ },
+ "proiezioni_umane": {
+  "strangers": [
+   1.331,
+   8.022
+  ],
+  "imperfect": [
+   0.35,
+   8.752
+  ]
+ },
+ "regole": {
+  "impulse": {
+   "share_near_TPE": 0.9645555555555556,
+   "share_zona_strangers": 0.00016666666666666666,
+   "share_zona_imperfetto": 0.0,
+   "dens_pct_strangers": 0.0,
+   "dens_pct_imperfetto": 0.0,
+   "media_mappa": [
+    -1.418,
+    -0.011
+   ]
+  },
+  "reinforcement": {
+   "share_near_TPE": 0.20677777777777778,
+   "share_zona_strangers": 0.0,
+   "share_zona_imperfetto": 0.0,
+   "dens_pct_strangers": 0.0,
+   "dens_pct_imperfetto": 0.0008888888888888889,
+   "media_mappa": [
+    1.418,
+    0.011
+   ]
+  }
+ }
+}

@@ -1,0 +1,166 @@
+{
+ "completo": {
+  "T0_autovalori": [
+   2.835,
+   2.462,
+   1.768,
+   1.155
+  ],
+  "T0_null_p95": [
+   1.041,
+   1.031,
+   1.024
+  ],
+  "T0_varianza_spiegata_PC1_PC2": 0.408,
+  "T0_split_half_mediana_p95": [
+   5.0,
+   10.1
+  ],
+  "loadings_PC1": {
+   "assets_rel": 0.305,
+   "cash_rel": -0.398,
+   "wealth_rel": -0.343,
+   "n_bid": 0.35,
+   "n_ask": 0.095,
+   "mkt_frac": 0.316,
+   "cancel": -0.08,
+   "bid_dev": 0.205,
+   "ask_dev": 0.178,
+   "buy_q": 0.386,
+   "sell_q": 0.101,
+   "buy_dev": 0.38,
+   "sell_dev": 0.128
+  },
+  "loadings_PC2": {
+   "assets_rel": 0.195,
+   "cash_rel": -0.321,
+   "wealth_rel": -0.262,
+   "n_bid": 0.022,
+   "n_ask": -0.37,
+   "mkt_frac": 0.168,
+   "cancel": -0.075,
+   "bid_dev": -0.266,
+   "ask_dev": -0.429,
+   "buy_q": 0.018,
+   "sell_q": -0.245,
+   "buy_dev": -0.258,
+   "sell_dev": -0.487
+  },
+  "T1_rep1_vs_rep2": {
+   "angolo": 7.5,
+   "null_med": 3.0,
+   "null_p95": 5.0,
+   "p": 0.0033
+  },
+  "T1_abilita_alta_vs_bassa": {
+   "angolo": 22.6,
+   "null_med": 3.8,
+   "null_p95": 6.9,
+   "p": 0.0033
+  },
+  "T2_occupazione_tutte": {
+   "regione": "PC1_high",
+   "gap_test_pp": 28.76,
+   "placebo_p95": 2.19,
+   "p": 0.001,
+   "n_traiettorie_test": 1552
+  },
+  "T2_occupazione_ricchezza_appaiata": {
+   "regione": "PC1_low",
+   "gap_test_pp": 7.54,
+   "placebo_p95": 2.65,
+   "p": 0.001,
+   "n_traiettorie_test": 1071
+  },
+  "T3_flusso_abilita": {
+   "dist": 0.04428,
+   "null_med": 0.00545,
+   "rapporto": 8.12,
+   "p": 0.0033
+  },
+  "T3_flusso_rep1_vs_rep2": {
+   "dist": 0.03798,
+   "null_med": 0.005,
+   "rapporto": 7.6,
+   "p": 0.0033
+  }
+ },
+ "solo_comportamento": {
+  "T0_autovalori": [
+   2.191,
+   1.673,
+   1.322,
+   1.023
+  ],
+  "T0_null_p95": [
+   1.032,
+   1.023,
+   1.016
+  ],
+  "T0_varianza_spiegata_PC1_PC2": 0.429,
+  "T0_split_half_mediana_p95": [
+   5.4,
+   9.6
+  ],
+  "loadings_PC1": {
+   "assets_rel": 0.237,
+   "n_bid": 0.515,
+   "n_ask": 0.291,
+   "mkt_frac": 0.308,
+   "cancel": -0.117,
+   "bid_dev": 0.101,
+   "ask_dev": 0.098,
+   "buy_q": 0.578,
+   "sell_q": 0.363
+  },
+  "loadings_PC2": {
+   "assets_rel": -0.327,
+   "n_bid": -0.201,
+   "n_ask": 0.59,
+   "mkt_frac": -0.283,
+   "cancel": 0.193,
+   "bid_dev": 0.183,
+   "ask_dev": 0.394,
+   "buy_q": -0.154,
+   "sell_q": 0.417
+  },
+  "T1_rep1_vs_rep2": {
+   "angolo": 10.1,
+   "null_med": 3.2,
+   "null_p95": 5.4,
+   "p": 0.0033
+  },
+  "T1_abilita_alta_vs_bassa": {
+   "angolo": 10.5,
+   "null_med": 4.0,
+   "null_p95": 7.2,
+   "p": 0.0033
+  },
+  "T2_occupazione_tutte": {
+   "regione": "PC1_high",
+   "gap_test_pp": 13.98,
+   "placebo_p95": 2.06,
+   "p": 0.001,
+   "n_traiettorie_test": 1532
+  },
+  "T2_occupazione_ricchezza_appaiata": {
+   "regione": "PC1_low",
+   "gap_test_pp": 9.38,
+   "placebo_p95": 2.86,
+   "p": 0.001,
+   "n_traiettorie_test": 1082
+  },
+  "T3_flusso_abilita": {
+   "dist": 0.02229,
+   "null_med": 0.00614,
+   "rapporto": 3.63,
+   "p": 0.0033
+  },
+  "T3_flusso_rep1_vs_rep2": {
+   "dist": 0.01829,
+   "null_med": 0.0054,
+   "rapporto": 3.39,
+   "p": 0.0033
+  }
+ }
+}

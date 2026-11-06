@@ -1,0 +1,210 @@
+{
+  "classica_intere": {
+    "label": "classica",
+    "n_games": 2495,
+    "all_plies": {
+      "W": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -14.636355074573018,
+        "signed_gap_test_pp": 14.636355074573018,
+        "rb_test": -0.5421953206844372,
+        "n_test_win": 363,
+        "n_test_loss": 213,
+        "placebo_p": 0.000999000999000999,
+        "placebo_p95_pp": 2.6107932540318717
+      },
+      "B": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -11.988853940433017,
+        "signed_gap_test_pp": 11.988853940433017,
+        "rb_test": -0.40742896312678645,
+        "n_test_win": 213,
+        "n_test_loss": 363,
+        "placebo_p": 0.000999000999000999,
+        "placebo_p95_pp": 2.565514153457657
+      }
+    },
+    "material_matched": {
+      "W": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -3.8666429091999883,
+        "signed_gap_test_pp": 3.8666429091999883,
+        "rb_test": -0.19307349173526844,
+        "n_test_win": 361,
+        "n_test_loss": 213,
+        "placebo_p": 0.002997002997002997,
+        "placebo_p95_pp": 2.131890363360546
+      },
+      "B": {
+        "region": "PC1_high",
+        "sign_train": 1.0,
+        "gap_test_pp": 5.496718187482549,
+        "signed_gap_test_pp": 5.496718187482549,
+        "rb_test": 0.176770874554808,
+        "n_test_win": 210,
+        "n_test_loss": 361,
+        "placebo_p": 0.000999000999000999,
+        "placebo_p95_pp": 2.0581199712028133
+      }
+    }
+  },
+  "classica_post_apertura": {
+    "label": "classica",
+    "n_games": 1980,
+    "all_plies": {
+      "W": {
+        "region": "PC2_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -2.378446447507945,
+        "signed_gap_test_pp": 2.378446447507945,
+        "rb_test": -0.06008748674443265,
+        "n_test_win": 328,
+        "n_test_loss": 230,
+        "placebo_p": 0.13386613386613386,
+        "placebo_p95_pp": 3.74715988988576
+      },
+      "B": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -6.759544008483559,
+        "signed_gap_test_pp": 6.759544008483559,
+        "rb_test": -0.20238600212089075,
+        "n_test_win": 230,
+        "n_test_loss": 328,
+        "placebo_p": 0.007992007992007992,
+        "placebo_p95_pp": 3.921774901234906
+      }
+    },
+    "material_matched": {
+      "W": {
+        "region": "PC2_high",
+        "sign_train": -1.0,
+        "gap_test_pp": -0.34286683716348854,
+        "signed_gap_test_pp": 0.34286683716348854,
+        "rb_test": 0.013863127598336966,
+        "n_test_win": 295,
+        "n_test_loss": 212,
+        "placebo_p": 0.44255744255744256,
+        "placebo_p95_pp": 4.086233107993387
+      },
+      "B": {
+        "region": "PC2_low",
+        "sign_train": 1.0,
+        "gap_test_pp": 1.4566428057568497,
+        "signed_gap_test_pp": 1.4566428057568497,
+        "rb_test": 0.017955259026687598,
+        "n_test_win": 208,
+        "n_test_loss": 294,
+        "placebo_p": 0.24475524475524477,
+        "placebo_p95_pp": 4.207235773240019
+      }
+    }
+  },
+  "veloci_intere": {
+    "label": "veloci",
+    "n_games": 2045,
+    "all_plies": {
+      "W": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -13.645115394828325,
+        "signed_gap_test_pp": 13.645115394828325,
+        "rb_test": -0.507478448613045,
+        "n_test_win": 397,
+        "n_test_loss": 322,
+        "placebo_p": 0.000999000999000999,
+        "placebo_p95_pp": 2.316847199945508
+      },
+      "B": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -12.294433362485771,
+        "signed_gap_test_pp": 12.294433362485771,
+        "rb_test": -0.4193407074800132,
+        "n_test_win": 322,
+        "n_test_loss": 397,
+        "placebo_p": 0.000999000999000999,
+        "placebo_p95_pp": 2.2080006674659547
+      }
+    },
+    "material_matched": {
+      "W": {
+        "region": "PC1_high",
+        "sign_train": 1.0,
+        "gap_test_pp": 3.569323404102323,
+        "signed_gap_test_pp": 3.569323404102323,
+        "rb_test": 0.11761697976651253,
+        "n_test_win": 396,
+        "n_test_loss": 321,
+        "placebo_p": 0.004995004995004995,
+        "placebo_p95_pp": 2.088690690919992
+      },
+      "B": {
+        "region": "PC1_high",
+        "sign_train": 1.0,
+        "gap_test_pp": 0.8328257079535051,
+        "signed_gap_test_pp": 0.8328257079535051,
+        "rb_test": 0.0521357778411069,
+        "n_test_win": 319,
+        "n_test_loss": 396,
+        "placebo_p": 0.22577422577422576,
+        "placebo_p95_pp": 1.906403210144052
+      }
+    }
+  },
+  "veloci_post_apertura": {
+    "label": "veloci",
+    "n_games": 1805,
+    "all_plies": {
+      "W": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -6.363055289229785,
+        "signed_gap_test_pp": 6.363055289229785,
+        "rb_test": -0.19941533660444044,
+        "n_test_win": 357,
+        "n_test_loss": 298,
+        "placebo_p": 0.002997002997002997,
+        "placebo_p95_pp": 3.305355570570072
+      },
+      "B": {
+        "region": "PC1_low",
+        "sign_train": -1.0,
+        "gap_test_pp": -6.23827383302315,
+        "signed_gap_test_pp": 6.23827383302315,
+        "rb_test": -0.15862049517793697,
+        "n_test_win": 298,
+        "n_test_loss": 357,
+        "placebo_p": 0.002997002997002997,
+        "placebo_p95_pp": 3.4730335916696466
+      }
+    },
+    "material_matched": {
+      "W": {
+        "region": "PC2_low",
+        "sign_train": 1.0,
+        "gap_test_pp": 2.606123752948913,
+        "signed_gap_test_pp": 2.606123752948913,
+        "rb_test": 0.06834069813658794,
+        "n_test_win": 318,
+        "n_test_loss": 269,
+        "placebo_p": 0.11288711288711288,
+        "placebo_p95_pp": 3.480832606525895
+      },
+      "B": {
+        "region": "PC2_high",
+        "sign_train": -1.0,
+        "gap_test_pp": 0.5936951477399116,
+        "signed_gap_test_pp": -0.5936951477399116,
+        "rb_test": -0.013696900114810617,
+        "n_test_win": 268,
+        "n_test_loss": 325,
+        "placebo_p": 0.5914085914085914,
+        "placebo_p95_pp": 3.43542688781749
+      }
+    }
+  }
+}

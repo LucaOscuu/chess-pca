@@ -1,0 +1,5 @@
+Perspective,Component,Mean,5th %ile,Min,Std
+White,PC1,0.9882,0.9593,0.8979,0.0160
+White,PC2,0.9879,0.9594,0.8979,0.0159
+Black,PC1,0.9995,0.9988,0.9970,0.0004
+Black,PC2,0.9989,0.9973,0.9951,0.0009

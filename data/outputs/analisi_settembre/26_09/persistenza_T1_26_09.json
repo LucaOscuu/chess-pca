@@ -1,0 +1,98 @@
+{
+  "full": {
+    "W": {
+      "principale": {
+        "osservata": 3.8588368835138076,
+        "blocchi_media": 3.442385922657497,
+        "blocchi_p95": 3.445040572468126,
+        "p_blocchi": 0.004975124378109453,
+        "eccesso_su_blocchi": 0.12097741805044726,
+        "shuffle_completo_media": 1.7338511088273436,
+        "eccesso_IC95": [
+          0.11847547941087715,
+          0.12334174999711905
+        ]
+      },
+      "escluse_troncate": {
+        "osservata": 3.004812664414227,
+        "blocchi_media": 3.262001952576634,
+        "blocchi_p95": 3.269737266661367,
+        "p_blocchi": 1.0,
+        "eccesso_su_blocchi": -0.07884400190479812,
+        "shuffle_completo_media": 1.7229335979979024
+      },
+      "n_traiettorie": 9999
+    },
+    "B": {
+      "principale": {
+        "osservata": 3.8779470611748703,
+        "blocchi_media": 3.4554452572435457,
+        "blocchi_p95": 3.4581456669897777,
+        "p_blocchi": 0.004975124378109453,
+        "eccesso_su_blocchi": 0.12227130586011947,
+        "shuffle_completo_media": 1.7483096788071566,
+        "eccesso_IC95": [
+          0.11945200910527114,
+          0.12454819413744314
+        ]
+      },
+      "escluse_troncate": {
+        "osservata": 3.004481859470648,
+        "blocchi_media": 3.2711249091551817,
+        "blocchi_p95": 3.278925437412534,
+        "p_blocchi": 1.0,
+        "eccesso_su_blocchi": -0.08151417542578598,
+        "shuffle_completo_media": 1.735966370485161
+      },
+      "n_traiettorie": 9999
+    }
+  },
+  "depth6": {
+    "W": {
+      "principale": {
+        "osservata": 4.70932846906261,
+        "blocchi_media": 3.9881551652316607,
+        "blocchi_p95": 3.997797522070848,
+        "p_blocchi": 0.004975124378109453,
+        "eccesso_su_blocchi": 0.18082879776545968,
+        "shuffle_completo_media": 1.7679509027900138,
+        "eccesso_IC95": [
+          0.1752131280183942,
+          0.1869362004907777
+        ]
+      },
+      "escluse_troncate": {
+        "osservata": 3.589554772188528,
+        "blocchi_media": 3.766848758378322,
+        "blocchi_p95": 3.7836943256219473,
+        "p_blocchi": 1.0,
+        "eccesso_su_blocchi": -0.047066924520251074,
+        "shuffle_completo_media": 1.7477525680265942
+      },
+      "n_traiettorie": 1993
+    },
+    "B": {
+      "principale": {
+        "osservata": 4.727226088040671,
+        "blocchi_media": 4.010606508603221,
+        "blocchi_p95": 4.019258034143281,
+        "p_blocchi": 0.004975124378109453,
+        "eccesso_su_blocchi": 0.17868109920537378,
+        "shuffle_completo_media": 1.774294896082156,
+        "eccesso_IC95": [
+          0.17160533730007893,
+          0.18480542144870357
+        ]
+      },
+      "escluse_troncate": {
+        "osservata": 3.5104700330252534,
+        "blocchi_media": 3.7833303958671642,
+        "blocchi_p95": 3.7986019332558163,
+        "p_blocchi": 1.0,
+        "eccesso_su_blocchi": -0.07212173780539444,
+        "shuffle_completo_media": 1.7574202629916431
+      },
+      "n_traiettorie": 1993
+    }
+  }
+}

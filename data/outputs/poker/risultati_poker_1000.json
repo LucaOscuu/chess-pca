@@ -1,0 +1,154 @@
+{
+ "T0_autovalori": [
+  4.635,
+  1.441,
+  0.959,
+  0.553
+ ],
+ "T0_null_p95": [
+  1.051,
+  1.036
+ ],
+ "loadings_PC1": {
+  "vpip": 0.43,
+  "pfr": 0.425,
+  "fold_pre": -0.414,
+  "saw_flop": 0.318,
+  "showdown": 0.227,
+  "pre_aggr": 0.425,
+  "post_aggr": 0.178,
+  "af": 0.313
+ },
+ "loadings_PC2": {
+  "vpip": -0.105,
+  "pfr": 0.201,
+  "fold_pre": 0.204,
+  "saw_flop": -0.474,
+  "showdown": -0.508,
+  "pre_aggr": 0.205,
+  "post_aggr": 0.319,
+  "af": 0.53
+ },
+ "T0_split_half_mediana_p95": [
+  4.3,
+  9.7
+ ],
+ "T1_bassa_vs_alta": {
+  "angolo": 13.9,
+  "null_p95": 9.9,
+  "p": 0.004
+ },
+ "T2_bacino_low": {
+  "gap_mediano_pp": 0.57,
+  "p_mediano": 0.4342,
+  "quota_p05": 0.0,
+  "placebo_p95": 6.07,
+  "auc_mediana": 0.519,
+  "tempo_vinc_perd": [
+   0.251,
+   0.251
+  ],
+  "regioni": {
+   "PC2_high": 10,
+   "PC1_high": 7,
+   "PC1_low": 2,
+   "PC2_low": 1
+  },
+  "n_test": 72,
+  "profilo_bacino_dentro_fuori_split1": {
+   "vpip": [
+    0.199,
+    0.128
+   ],
+   "pfr": [
+    0.063,
+    0.098
+   ],
+   "fold_pre": [
+    0.698,
+    0.835
+   ],
+   "saw_flop": [
+    0.264,
+    0.099
+   ],
+   "showdown": [
+    0.095,
+    0.022
+   ],
+   "pre_aggr": [
+    0.063,
+    0.099
+   ],
+   "post_aggr": [
+    0.123,
+    0.236
+   ],
+   "af": [
+    0.36,
+    1.004
+   ]
+  }
+ },
+ "T2_bacino_high": {
+  "gap_mediano_pp": 3.53,
+  "p_mediano": 0.1891,
+  "quota_p05": 0.15,
+  "placebo_p95": 5.94,
+  "auc_mediana": 0.558,
+  "tempo_vinc_perd": [
+   0.262,
+   0.236
+  ],
+  "regioni": {
+   "PC1_low": 13,
+   "PC1_high": 5,
+   "PC2_high": 1,
+   "PC2_low": 1
+  },
+  "n_test": 108,
+  "profilo_bacino_dentro_fuori_split1": {
+   "vpip": [
+    0.071,
+    0.314
+   ],
+   "pfr": [
+    0.047,
+    0.242
+   ],
+   "fold_pre": [
+    0.905,
+    0.653
+   ],
+   "saw_flop": [
+    0.037,
+    0.188
+   ],
+   "showdown": [
+    0.008,
+    0.065
+   ],
+   "pre_aggr": [
+    0.048,
+    0.249
+   ],
+   "post_aggr": [
+    0.06,
+    0.319
+   ],
+   "af": [
+    0.475,
+    1.988
+   ]
+  }
+ },
+ "T3_flusso_bassa_vs_alta": {
+  "dist": 0.73282,
+  "rapporto": 16.16,
+  "p": 0.002
+ },
+ "n": {
+  "high": 216,
+  "low": 143
+ }
+}

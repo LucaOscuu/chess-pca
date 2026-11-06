@@ -1,0 +1,370 @@
+% FILE GENERATO DA paper/tools/make_numbers.py -- NON MODIFICARE A MANO
+% Ogni numero del paper e' qui. Nel testo: \val{chiave}. Fonte di ogni chiave in numbers_index.md
+\makeatletter
+\newcommand{\val}[1]{\ifcsname val@#1\endcsname\csname val@#1\endcsname\else\errmessage{Chiave numerica non definita: #1}\fi}
+\expandafter\def\csname val@chess.full.games\endcsname{9,999}  % partite nel corpus full | data/cache/white_data_max10000_min10.parquet
+\expandafter\def\csname val@chess.full.draws\endcsname{70.8}  % % patte nel corpus full | data/cache/white_data_max10000_min10.parquet
+\expandafter\def\csname val@chess.full.decisive\endcsname{29.2}  % % partite decisive nel corpus full | data/cache/white_data_max10000_min10.parquet
+\expandafter\def\csname val@chess.phi.d\endcsname{18}  % numero di coordinate del feature map | data/cache/white_data_max10000_min10.parquet
+\expandafter\def\csname val@chess.full.states\endcsname{1,200,172}  % stati (righe) del corpus full | data/cache/white_data_max10000_min10.parquet + black
+\expandafter\def\csname val@chess.d6.games\endcsname{1,993}  % partite nel corpus d6 | data/cache_d6/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d6.draws\endcsname{43.8}  % % patte nel corpus d6 | data/cache_d6/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d6.decisive\endcsname{56.2}  % % partite decisive nel corpus d6 | data/cache_d6/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d3.games\endcsname{1,992}  % partite nel corpus d3 | data/cache_d3/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d3.draws\endcsname{35.9}  % % patte nel corpus d3 | data/cache_d3/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d3.decisive\endcsname{64.1}  % % partite decisive nel corpus d3 | data/cache_d3/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d1.games\endcsname{1,957}  % partite nel corpus d1 | data/cache_d1/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d1.draws\endcsname{56.2}  % % patte nel corpus d1 | data/cache_d1/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.d1.decisive\endcsname{43.8}  % % partite decisive nel corpus d1 | data/cache_d1/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.random.games\endcsname{1,998}  % partite nel corpus random | data/cache_random/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.random.draws\endcsname{87.2}  % % patte nel corpus random | data/cache_random/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.random.decisive\endcsname{12.8}  % % partite decisive nel corpus random | data/cache_random/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.3check.games\endcsname{1,823}  % partite nel corpus 3check | data/cache_3check/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.3check.draws\endcsname{2.0}  % % patte nel corpus 3check | data/cache_3check/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.3check.decisive\endcsname{98.0}  % % partite decisive nel corpus 3check | data/cache_3check/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.antichess.games\endcsname{2,000}  % partite nel corpus antichess | data/cache_antichess/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.antichess.draws\endcsname{4.0}  % % patte nel corpus antichess | data/cache_antichess/white_data_max2000_min10.parquet
+\expandafter\def\csname val@chess.antichess.decisive\endcsname{96.1}  % % partite decisive nel corpus antichess | data/cache_antichess/white_data_max2000_min10.parquet
+\expandafter\def\csname val@human.classical.games\endcsname{2,495}  % partite umane classical | data/umani/partite_umane_meta.csv
+\expandafter\def\csname val@human.classical.elo\endcsname{2,580}  % Elo medio classical | data/umani/partite_umane_meta.csv
+\expandafter\def\csname val@human.fast.games\endcsname{2,045}  % partite umane fast | data/umani/partite_umane_meta.csv
+\expandafter\def\csname val@human.fast.elo\endcsname{2,567}  % Elo medio fast | data/umani/partite_umane_meta.csv
+\expandafter\def\csname val@human.minelo\endcsname{2,400}  % Elo minimo (filtro >= 2400) | data/umani/partite_umane_meta.csv
+\expandafter\def\csname val@a3.kstar.full\endcsname{8}  % assi sopra il null che conserva la dipendenza, full | analisi_settembre/26_09/A3_null_dipendente_T2_26_09.json
+\expandafter\def\csname val@a3.kstar.depth6\endcsname{7}  % assi sopra il null che conserva la dipendenza, depth6 | analisi_settembre/26_09/A3_null_dipendente_T2_26_09.json
+\expandafter\def\csname val@a3.kstar.random\endcsname{7}  % assi sopra il null che conserva la dipendenza, random | analisi_settembre/26_09/A3_null_dipendente_T2_26_09.json
+\expandafter\def\csname val@a3.kstar.3check\endcsname{6}  % assi sopra il null che conserva la dipendenza, 3check | analisi_settembre/26_09/A3_null_dipendente_T2_26_09.json
+\expandafter\def\csname val@a2.anti.rawinv\endcsname{14}  % inversioni grezze di segno antichess vs depth6 (|r|>0.05) | a2_partial_antichess.csv
+\expandafter\def\csname val@a2.anti.partinv\endcsname{3}  % inversioni parziali (controllando il materiale), |r|>0.05 | a2_partial_antichess.csv
+\expandafter\def\csname val@a2.anti.rawinv.ci\endcsname{16}  % inversioni grezze con IC bootstrap per partita che escludono zero (criterio IC, include |r|<0.05) | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.anti.partinv.ci\endcsname{7}  % inversioni parziali con IC che escludono zero | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.matcorr.ref\endcsname{0.546}  % corr(material, esito) depth6 | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.matcorr.anti\endcsname{-0.244}  % corr(material, esito) antichess | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.matcorr.3check\endcsname{0.392}  % corr(material, esito) Three-Check | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.3check.rawinv\endcsname{0}  % inversioni grezze Three-Check | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@a2.3check.partinv.ci\endcsname{1}  % inversioni parziali con IC Three-Check (mobility) | analisi_settembre/27_09/T3_27_09.json
+\expandafter\def\csname val@rot.anti.angle\endcsname{72.1}  % angolo piano antichess vs depth6 (finestra T5, mosse per giocatore, appaiato) | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.anti.p95\endcsname{9.8}  % null p95 appaiato antichess | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.anti.pairs\endcsname{1,987}  % coppie appaiate antichess | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.anti.p\endcsname{0.001}  % p antichess | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.3check12.angle\endcsname{32.3}  % angolo Three-Check vs depth6 (finestra T5) | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.3check12.p95\endcsname{15.8}  % null p95 Three-Check (finestra T5) | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@rot.random.angle\endcsname{32.3}  % angolo random vs depth6, finestra corta (mosse per giocatore), appaiato per apertura | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.random.p95\endcsname{20.7}  % null p95 appaiato random | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.random.p\endcsname{0.001}  % p appaiato random | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.random.pairs\endcsname{396}  % coppie random | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.3check.angle\endcsname{21.3}  % angolo 3check vs depth6, finestra corta (mosse per giocatore), appaiato per apertura | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.3check.p95\endcsname{12.7}  % null p95 appaiato 3check | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.3check.p\endcsname{0.001}  % p appaiato 3check | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.3check.pairs\endcsname{1,256}  % coppie 3check | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.d1.angle\endcsname{18.4}  % angolo depth1 vs depth6, finestra corta (mosse per giocatore), appaiato per apertura | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.d1.p95\endcsname{13.8}  % null p95 appaiato depth1 | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.d1.p\endcsname{0.005}  % p appaiato depth1 | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@rot.d1.pairs\endcsname{1,681}  % coppie depth1 | analisi_settembre/27_09/T4_27_09.json
+\expandafter\def\csname val@occ.full.mm.w\endcsname{8.4}  % gap occupazione full, materiale appaiato, W (pp) | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.w.p95\endcsname{1.6}  % placebo p95 (pp) W | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.w.p\endcsname{0.001}  % p placebo per partita W | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.w.rb\endcsname{0.25}  % rank-biserial |rb| W | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.all.w\endcsname{20.3}  % gap non appaiato W (pp) | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.b\endcsname{5.9}  % gap occupazione full, materiale appaiato, B (pp) | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.b.p95\endcsname{1.5}  % placebo p95 (pp) B | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.b.p\endcsname{0.001}  % p placebo per partita B | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.mm.b.rb\endcsname{0.20}  % rank-biserial |rb| B | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full.all.b\endcsname{22.3}  % gap non appaiato B (pp) | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.perms\endcsname{1,000}  % permutazioni del placebo | occupancy_grouped/occupancy_grouped_full.json
+\expandafter\def\csname val@occ.full20.mm.w\endcsname{7.2}  % gap full finestre corte (mosse per giocatore) W | occupancy_grouped/occupancy_grouped_full_w20.json
+\expandafter\def\csname val@occ.full20.mm.b\endcsname{4.1}  % gap full finestre corte (mosse per giocatore) B | occupancy_grouped/occupancy_grouped_full_w20.json
+\expandafter\def\csname val@occ.3check.mm.w\endcsname{10.1}  % gap Three-Check, traiettorie intere, W | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.3check.mm.b\endcsname{8.9}  % gap Three-Check, traiettorie intere, B | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.splits.w.med\endcsname{7.2}  % mediana gap su 100 divisioni W | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.w.lo\endcsname{6.1}  % 5° percentile W | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.w.hi\endcsname{8.2}  % 95° percentile W | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.w.share\endcsname{100}  % % divisioni sopra 1.6 pp W | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.b.med\endcsname{7.1}  % mediana gap su 100 divisioni B | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.b.lo\endcsname{6.1}  % 5° percentile B | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.b.hi\endcsname{8.0}  % 95° percentile B | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.splits.b.share\endcsname{100}  % % divisioni sopra 1.6 pp B | analisi_settembre/26_09/occupazione_100_divisioni_T3a_26_09.json
+\expandafter\def\csname val@occ.gen.d1\endcsname{3.0}  % gap medio W/B depth1 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.d1.p\endcsname{0.042}  % p depth1 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.d3\endcsname{3.5}  % gap medio W/B depth3 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.d3.p\endcsname{0.018}  % p depth3 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.d6\endcsname{3.7}  % gap medio W/B depth6 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.d6.p\endcsname{0.009}  % p depth6 | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.z\endcsname{3.57}  % z di Stouffer corpora generati | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@occ.gen.p\endcsname{0.0002}  % p di Stouffer | analisi_settembre/26_09/occupazione_stouffer_T3b_26_09.json
+\expandafter\def\csname val@hum.rot.cl.d6\endcsname{39.3}  % angolo classica vs depth6 (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.d6.p95\endcsname{10.6}  % null p95 classica vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.d6.p\endcsname{0.001}  % p classica vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.d6\endcsname{36.3}  % angolo veloci vs depth6 (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.d6.p95\endcsname{10.5}  % null p95 veloci vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.d6.p\endcsname{0.001}  % p veloci vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.full\endcsname{8.6}  % angolo classica vs full (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.full.p95\endcsname{9.8}  % null p95 classica vs full | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.full.p\endcsname{0.102}  % p classica vs full | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.full\endcsname{13.0}  % angolo veloci vs full (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.full.p95\endcsname{11.0}  % null p95 veloci vs full | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.fa.full.p\endcsname{0.017}  % p veloci vs full | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.fa\endcsname{6.9}  % angolo classica vs veloci (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.fa.p95\endcsname{8.9}  % null p95 classica vs veloci | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.cl.fa.p\endcsname{0.211}  % p classica vs veloci | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.full.d6\endcsname{30.8}  % angolo full vs depth6 (righe 10-29) | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.full.d6.p95\endcsname{12.0}  % null p95 full vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.rot.full.d6.p\endcsname{0.001}  % p full vs depth6 | umani/rotazione.csv
+\expandafter\def\csname val@hum.occ.cl.w\endcsname{3.9}  % gap occupazione classica_intere W | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.cl.w.p\endcsname{0.003}  % p classica_intere W | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.cl.b\endcsname{5.5}  % gap occupazione classica_intere B | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.cl.b.p\endcsname{0.001}  % p classica_intere B | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.fa.w\endcsname{3.6}  % gap occupazione veloci_intere W | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.fa.w.p\endcsname{0.005}  % p veloci_intere W | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.fa.b\endcsname{0.8}  % gap occupazione veloci_intere B | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.fa.b.p\endcsname{0.226}  % p veloci_intere B | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.clpost.w\endcsname{0.3}  % gap classica_post_apertura W | umani/occupazione.json
+\expandafter\def\csname val@hum.occ.clpost.b\endcsname{1.5}  % gap classica_post_apertura B | umani/occupazione.json
+\expandafter\def\csname val@hum.matcorr.cl\endcsname{0.190}  % corr(material, esito) classica | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.matcorr.fa\endcsname{0.233}  % corr(material, esito) veloci | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.matcorr.full\endcsname{0.227}  % corr(material, esito) full | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.inv.cl\endcsname{0}  % inversioni parziali classica | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.inv.fa\endcsname{0}  % inversioni parziali veloci | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.draws.cl\endcsname{52.1}  % % patte classica | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.draws.fa\endcsname{28.1}  % % patte veloci | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.draws.full\endcsname{70.8}  % % patte full | umani/esiti_obiettivo.json
+\expandafter\def\csname val@hum.draws.d6\endcsname{43.8}  % % patte depth6 | umani/esiti_obiettivo.json
+\expandafter\def\csname val@flow.cl.fa.ratio\endcsname{3.4}  % campo di flusso classica vs veloci: osservato / mediana null | umani/flusso.json
+\expandafter\def\csname val@flow.cl.fa.p\endcsname{0.002}  % p classica vs veloci | umani/flusso.json
+\expandafter\def\csname val@flow.cl.full.ratio\endcsname{7.1}  % campo di flusso classica vs full: osservato / mediana null | umani/flusso.json
+\expandafter\def\csname val@flow.cl.full.p\endcsname{0.002}  % p classica vs full | umani/flusso.json
+\expandafter\def\csname val@flow.fa.full.ratio\endcsname{9.7}  % campo di flusso veloci vs full: osservato / mediana null | umani/flusso.json
+\expandafter\def\csname val@flow.fa.full.p\endcsname{0.002}  % p veloci vs full | umani/flusso.json
+\expandafter\def\csname val@flow.full.d6.ratio\endcsname{51.5}  % campo di flusso full vs depth6: osservato / mediana null | umani/flusso.json
+\expandafter\def\csname val@flow.full.d6.p\endcsname{0.002}  % p full vs depth6 | umani/flusso.json
+\expandafter\def\csname val@flow.cl.d6.ratio\endcsname{56.1}  % campo di flusso classica vs depth6: osservato / mediana null | umani/flusso.json
+\expandafter\def\csname val@flow.cl.d6.p\endcsname{0.002}  % p classica vs depth6 | umani/flusso.json
+\expandafter\def\csname val@flow.cl.fa.dec.ratio\endcsname{1.4}  % flusso classica vs veloci, solo decisive | umani/flusso_robustezza.json
+\expandafter\def\csname val@flow.cl.fa.dec.p\endcsname{0.026}  % p solo decisive | umani/flusso_robustezza.json
+\expandafter\def\csname val@prov.imp.cl\endcsname{0.25}  % proiezione del passo dopo impulso, classica [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.cl.none\endcsname{-0.06}  % proiezione senza impulso, classica [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.fa\endcsname{0.23}  % proiezione del passo dopo impulso, veloci [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.fa.none\endcsname{-0.04}  % proiezione senza impulso, veloci [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.full\endcsname{0.23}  % proiezione del passo dopo impulso, full [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.full.none\endcsname{-0.06}  % proiezione senza impulso, full [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.d6\endcsname{0.14}  % proiezione del passo dopo impulso, depth6 [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@prov.imp.d6.none\endcsname{-0.07}  % proiezione senza impulso, depth6 [PROVVISORIO] | umani/flusso.json
+\expandafter\def\csname val@lev.full.mobility\endcsname{62.3}  % leva mobility sul corpus full (gradi) | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.pawns-passed-diff\endcsname{56.1}  % leva pawns_passed_diff sul corpus full (gradi) | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.captures-avail\endcsname{54.5}  % leva captures_avail sul corpus full (gradi) | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.cnt-pawn\endcsname{35.9}  % leva cnt_pawn sul corpus full (gradi) | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.p95\endcsname{10.7}  % null p95 leva full | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.above\endcsname{13}  % coordinate sopra il null (full) | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.full.abovemax\endcsname{7}  % coordinate sopra il contrasto massimo 33.4 | analisi_settembre/27_09/T6_27_09.json
+\expandafter\def\csname val@lev.d6.pawns-passed-diff\endcsname{71.8}  % leva pawns_passed_diff su depth6 | feature_leverage_depth6.csv
+\expandafter\def\csname val@lev.d6.cnt-pawn\endcsname{54.2}  % leva cnt_pawn su depth6 | feature_leverage_depth6.csv
+\expandafter\def\csname val@lev.d6.mobility\endcsname{49.9}  % leva mobility su depth6 | feature_leverage_depth6.csv
+\expandafter\def\csname val@lev.d6.captures-avail\endcsname{35.3}  % leva captures_avail su depth6 | feature_leverage_depth6.csv
+\expandafter\def\csname val@perm.a.sys\endcsname{32}  % PERMANOVA disegno A, quota sistema (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.b.sys\endcsname{58}  % PERMANOVA disegno B, quota sistema (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.a.instr\endcsname{51}  % PERMANOVA disegno A, quota strumento (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.b.instr\endcsname{18}  % PERMANOVA disegno B, quota strumento (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.a.inter\endcsname{14}  % PERMANOVA disegno A, quota interazione (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.b.inter\endcsname{20}  % PERMANOVA disegno B, quota interazione (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.a.samp\endcsname{3}  % PERMANOVA disegno A, quota residuo_campionamento (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@perm.b.samp\endcsname{5}  % PERMANOVA disegno B, quota residuo_campionamento (%) | analisi_settembre/26_09/permanova_B2_26_09.json
+\expandafter\def\csname val@fa.angle\endcsname{34.3}  % contrasto random vs depth6 con analisi fattoriale | analisi_settembre/27_09/T2a_27_09.json
+\expandafter\def\csname val@fa.pcaangle\endcsname{33.6}  % stesso contrasto con PCA | analisi_settembre/27_09/T2a_27_09.json
+\expandafter\def\csname val@fa.occ.w\endcsname{8.3}  % occupazione con analisi fattoriale W | analisi_settembre/27_09/T2c_27_09.json
+\expandafter\def\csname val@fa.occ.b\endcsname{8.4}  % occupazione con analisi fattoriale B | analisi_settembre/27_09/T2c_27_09.json
+\expandafter\def\csname val@inst.i1.w\endcsname{6.5}  % occupazione I1_senza_leva_alta W | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i1.b\endcsname{6.6}  % occupazione I1_senza_leva_alta B | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i1.d\endcsname{14}  % coordinate I1_senza_leva_alta | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i2.w\endcsname{1.2}  % occupazione I2_solo_materiale W | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i2.b\endcsname{0.8}  % occupazione I2_solo_materiale B | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i2.d\endcsname{8}  % coordinate I2_solo_materiale | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i3.w\endcsname{7.3}  % occupazione I3_solo_posizionali W | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i3.b\endcsname{7.1}  % occupazione I3_solo_posizionali B | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@inst.i3.d\endcsname{10}  % coordinate I3_solo_posizionali | analisi_settembre/26_09/occupazione_strumenti_B1_26_09.json
+\expandafter\def\csname val@pers.full.w\endcsname{12.1}  % eccesso persistenza full W (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.full.w.trunc\endcsname{-7.9}  % eccesso senza visite terminali full W (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.full.b\endcsname{12.2}  % eccesso persistenza full B (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.full.b.trunc\endcsname{-8.2}  % eccesso senza visite terminali full B (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.d6.w\endcsname{18.1}  % eccesso persistenza depth6 W (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.d6.w.trunc\endcsname{-4.7}  % eccesso senza visite terminali depth6 W (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.d6.b\endcsname{17.9}  % eccesso persistenza depth6 B (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@pers.d6.b.trunc\endcsname{-7.2}  % eccesso senza visite terminali depth6 B (%) | analisi_settembre/26_09/persistenza_T1_26_09.json
+\expandafter\def\csname val@win.short\endcsname{20}  % finestra corta: righe per prospettiva = mosse per giocatore (occupazione full_w20, contrasti T4, leva T6) | occupancy_grouped/occupancy_grouped_full_w20.json
+\expandafter\def\csname val@win.anti\endcsname{12}  % finestra del contrasto antichess/Three-Check (T5): righe per prospettiva = mosse per giocatore | analisi_settembre/27_09/PREREG_27_09.md
+\expandafter\def\csname val@occ.mm.cp\endcsname{50}  % soglia dell'appaiamento sul materiale (centipawn) | occupancy_grouped/REGISTRO_OCCUPAZIONE.md
+\expandafter\def\csname val@occ.splits.n\endcsname{100}  % numero di divisioni training/test (T3a) | analisi_settembre/26_09/PREREG_26_09.md
+\expandafter\def\csname val@a2.thr\endcsname{0.05}  % soglia |r| per contare un'inversione di segno (A2) | analisi_settembre/27_09/REGISTRO_27_09.md
+\expandafter\def\csname val@rot.perms\endcsname{1,000}  % permutazioni dei contrasti appaiati (T4) | analisi_settembre/27_09/REGISTRO_27_09.md
+\expandafter\def\csname val@a2.anti.ncomp\endcsname{17}  % coordinate con correlazione calcolabile in antichess (checks_avail senza varianza) | a2_partial_antichess.csv
+\expandafter\def\csname val@a2.3check.checks.partref\endcsname{0.011}  % corr. parziale checks_avail-esito, depth6 (predizione Three-Check) | a2_partial_3check.csv
+\expandafter\def\csname val@a2.3check.checks.parttgt\endcsname{0.078}  % corr. parziale checks_avail-esito, Three-Check | a2_partial_3check.csv
+\expandafter\def\csname val@rot.3check12.p\endcsname{0.001}  % p Three-Check (finestra T5) | analisi_settembre/27_09/T5_27_09.json
+\expandafter\def\csname val@occ.3check.mm.w.p\endcsname{0.001}  % p placebo Three-Check W | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.3check.mm.w.p95\endcsname{2.8}  % placebo p95 Three-Check W | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.3check.mm.b.p\endcsname{0.001}  % p placebo Three-Check B | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.3check.mm.b.p95\endcsname{2.9}  % placebo p95 Three-Check B | occupancy_grouped/occupancy_grouped_3check_whole.json
+\expandafter\def\csname val@occ.d6w20.mm.w\endcsname{1.3}  % gap depth6 finestre corte W | occupancy_grouped/occupancy_grouped_depth6.json
+\expandafter\def\csname val@occ.d6w20.mm.w.p\endcsname{0.249}  % p depth6 finestre corte W | occupancy_grouped/occupancy_grouped_depth6.json
+\expandafter\def\csname val@occ.d6w20.mm.b\endcsname{1.5}  % gap depth6 finestre corte B | occupancy_grouped/occupancy_grouped_depth6.json
+\expandafter\def\csname val@occ.d6w20.mm.b.p\endcsname{0.230}  % p depth6 finestre corte B | occupancy_grouped/occupancy_grouped_depth6.json
+\expandafter\def\csname val@flow.cl.fa.dec1040.ratio\endcsname{1.4}  % flusso classica vs veloci, decisive e righe 10-40 | umani/flusso_robustezza.json
+\expandafter\def\csname val@flow.cl.fa.dec1040.p\endcsname{0.058}  % p decisive e righe 10-40 | umani/flusso_robustezza.json
+\expandafter\def\csname val@mkt.markets\endcsname{166}  % mercati nella replica Huber et al. | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.traders\endcsname{1,544}  % trader | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.traj\endcsname{3,088}  % traiettorie trader x ripetizione | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.full.split\endcsname{5.0}  % split-half mediano completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.split.p95\endcsname{10.1}  % split-half p95 completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.evr\endcsname{41}  % varianza spiegata PC1+PC2 completo (%) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.rep\endcsname{7.5}  % rotazione rip.1 vs 2 completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.rep.p95\endcsname{5.0}  % null p95 rip. completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.skill\endcsname{22.6}  % rotazione abilita completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.skill.p95\endcsname{6.9}  % null p95 abilita completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.occ.mm\endcsname{7.5}  % occupazione a ricchezza appaiata completo (pp) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.occ.mm.p95\endcsname{2.7}  % placebo p95 completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.occ.mm.p\endcsname{0.001}  % p completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.occ.all\endcsname{28.8}  % occupazione non appaiata completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.flow.skill\endcsname{8.1}  % flusso abilita completo (x rumore) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.flow.rep\endcsname{7.6}  % flusso ripetizione completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.flow.p\endcsname{0.003}  % p flusso abilita completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.split\endcsname{5.4}  % split-half mediano solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.split.p95\endcsname{9.6}  % split-half p95 solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.evr\endcsname{43}  % varianza spiegata PC1+PC2 solo_comportamento (%) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.rep\endcsname{10.1}  % rotazione rip.1 vs 2 solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.rep.p95\endcsname{5.4}  % null p95 rip. solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.skill\endcsname{10.5}  % rotazione abilita solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.skill.p95\endcsname{7.2}  % null p95 abilita solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.occ.mm\endcsname{9.4}  % occupazione a ricchezza appaiata solo_comportamento (pp) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.occ.mm.p95\endcsname{2.9}  % placebo p95 solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.occ.mm.p\endcsname{0.001}  % p solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.occ.all\endcsname{14.0}  % occupazione non appaiata solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.flow.skill\endcsname{3.6}  % flusso abilita solo_comportamento (x rumore) | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.flow.rep\endcsname{3.4}  % flusso ripetizione solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.flow.p\endcsname{0.003}  % p flusso abilita solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.basin.rho\endcsname{0.20}  % rho abilita-bacino completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.rholo\endcsname{0.08}  % rho min completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.rhohi\endcsname{0.24}  % rho max completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.beta0\endcsname{0.29}  % beta abilita senza bacino completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.beta1\endcsname{0.22}  % beta abilita con bacino completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.rho\endcsname{0.08}  % rho abilita-bacino solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.rholo\endcsname{0.03}  % rho min solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.rhohi\endcsname{0.13}  % rho max solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.beta0\endcsname{0.30}  % beta abilita senza bacino solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.beta1\endcsname{0.28}  % beta abilita con bacino solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.auc.basin\endcsname{0.74}  % AUC mediana basin completo | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.full.auc.logit\endcsname{0.95}  % AUC mediana logit completo | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.full.auc.kmeans\endcsname{0.70}  % AUC mediana kmeans completo | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.beh.auc.basin\endcsname{0.65}  % AUC mediana basin solo_comportamento | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.beh.auc.logit\endcsname{0.79}  % AUC mediana logit solo_comportamento | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.beh.auc.kmeans\endcsname{0.61}  % AUC mediana kmeans solo_comportamento | mercati/risultati_baseline.json
+\expandafter\def\csname val@mkt.ldt.diff\endcsname{-0.11}  % learning direction D1: differenza (segno opposto alla predizione) | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.p\endcsname{0.021}  % p D1 | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.low.diff\endcsname{-0.21}  % D1 nei trader a bassa abilita | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.low.p\endcsname{0.003}  % p bassa abilita | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.high.p\endcsname{0.983}  % p alta abilita | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldtc.proj\endcsname{0.01}  % passo verso la direzione vincente dopo errore, entro cella | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.proj.lo\endcsname{-0.04}  % IC basso | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.proj.hi\endcsname{0.06}  % IC alto | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.reps\endcsname{2}  % ripetizioni per trader | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.periods\endcsname{10}  % periodi per ripetizione | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.fv.start\endcsname{55}  % valore fondamentale iniziale | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.fv.end\endcsname{5}  % valore fondamentale finale | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.obs\endcsname{30,880}  % osservazioni trader x periodo | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.perms.short\endcsname{300}  % permutazioni di T1 e T3 (rotazioni e flusso) | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.perms.long\endcsname{1,000}  % permutazioni del placebo di occupazione (T2) | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.flow.grid\endcsname{4}  % lato della griglia del flusso (celle per asse) | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.basin.splits\endcsname{20}  % divisioni dei mercati per il test del bacino | mercati/REGISTRO_MERCATI.md
+\expandafter\def\csname val@mkt.wealth.lo\endcsname{0.9}  % finestra di ricchezza appaiata: estremo basso | mercati/PREDIZIONI_MERCATI.md
+\expandafter\def\csname val@mkt.wealth.hi\endcsname{1.1}  % finestra di ricchezza appaiata: estremo alto | mercati/PREDIZIONI_MERCATI.md
+\expandafter\def\csname val@mkt.full.nfeat\endcsname{13}  % numero di feature completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.lam1\endcsname{2.84}  % primo autovalore completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.lam2\endcsname{2.46}  % secondo autovalore completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.lam.p95\endcsname{1.04}  % null p95 del primo autovalore (colonne mescolate) completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.rep.p\endcsname{0.003}  % p rotazione rip.1 vs 2 completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.rot.skill.p\endcsname{0.003}  % p rotazione abilita completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.occ.all.p95\endcsname{2.2}  % placebo p95 occupazione non appaiata completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.flow.rep.p\endcsname{0.003}  % p flusso ripetizione completo | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.nfeat\endcsname{9}  % numero di feature solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.lam1\endcsname{2.19}  % primo autovalore solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.lam2\endcsname{1.67}  % secondo autovalore solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.lam.p95\endcsname{1.03}  % null p95 del primo autovalore (colonne mescolate) solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.rep.p\endcsname{0.003}  % p rotazione rip.1 vs 2 solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.rot.skill.p\endcsname{0.003}  % p rotazione abilita solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.occ.all.p95\endcsname{2.1}  % placebo p95 occupazione non appaiata solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.beh.flow.rep.p\endcsname{0.003}  % p flusso ripetizione solo_comportamento | mercati/risultati_mercati.json
+\expandafter\def\csname val@mkt.full.basin.p\endcsname{0.005}  % p mediano abilita-bacino completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.share\endcsname{100}  % % divisioni con p <= 0,05 completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.full.basin.modal\endcsname{8}  % divisioni in cui viene scelta la regione piu frequente completo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.p\endcsname{0.005}  % p mediano abilita-bacino solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.share\endcsname{100}  % % divisioni con p <= 0,05 solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.beh.basin.modal\endcsname{18}  % divisioni in cui viene scelta la regione piu frequente solo_comportamento | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.ldt.raw.bid\endcsname{-0.14}  % C1 grezzo: variazione del prezzo dei bid dopo aver pagato troppo | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.ldt.raw.proj\endcsname{0.64}  % C2 grezzo: passo verso la direzione vincente dopo errore (regressione verso la media) | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.ldtc.bid\endcsname{0.15}  % C1 entro cella: variazione bid dopo aver pagato troppo, completo | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.bid.lo\endcsname{0.11}  % IC basso | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.bid.hi\endcsname{0.19}  % IC alto | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.beh.bid\endcsname{0.12}  % C1 entro cella, run solo_comportamento (stessa variabile grezza dei bid, cambia solo la divisione casuale dei mercati) | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldt.hl.diff\endcsname{0.21}  % D2: differenza alta meno bassa abilita | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.hl.p\endcsname{0.084}  % p differenza alta meno bassa abilita | mercati/risultati_ldt2.json
+\expandafter\def\csname val@mkt.ldt.c3.diff\endcsname{-0.03}  % C3: differenza alta meno bassa abilita (grezza) | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.ldt.c3.p\endcsname{0.622}  % p C3 | mercati/risultati_bacino_ldt.json
+\expandafter\def\csname val@mkt.ldtc.beh.proj.lo\endcsname{-0.06}  % C2 entro cella, solo comportamento: IC basso | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.ldtc.beh.proj.hi\endcsname{0.06}  % C2 entro cella, solo comportamento: IC alto | mercati/risultati_ldt_controllo.json
+\expandafter\def\csname val@mkt.basin.perms\endcsname{200}  % permutazioni del test B nelle divisioni dopo la prima (1.000 solo nella prima) | src/chess_pca/mercati/bacino_ldt.py
+\expandafter\def\csname val@mkt.basin.perms.reg\endcsname{1,000}  % permutazioni del test B registrate | mercati/PREDIZIONI_BACINO_LDT.md
+\expandafter\def\csname val@mkt.occ.minper\endcsname{3}  % periodi minimi nella finestra di ricchezza per tenere una traiettoria (T2) | src/chess_pca/mercati/analisi_mercati.py
+\expandafter\def\csname val@chess.flow.grid\endcsname{6}  % celle per asse della griglia del flusso negli scacchi (quantili) | src/chess_pca/umani/flusso.py
+\expandafter\def\csname val@flow.mincell\endcsname{30}  % osservazioni minime per cella in entrambi i gruppi (uguale in analisi_mercati.py) | src/chess_pca/umani/flusso.py
+\expandafter\def\csname val@rps.s.near\endcsname{47}  % % tempo a <0.05 da Nash, gioco stabile (lambda 0.2, mix) [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.s.mode\endcsname{0.04}  % distanza moda-Nash, gioco stabile [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l2.near\endcsname{0}  % % tempo vicino a Nash, instabile lambda 0.2 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l2.dnash\endcsname{0.12}  % distanza media-Nash, instabile lambda 0.2 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l2.dtasp\endcsname{0.05}  % distanza media-TASP, instabile lambda 0.2 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l2.dist\endcsname{0.38}  % distanza media da Nash degli stati, instabile lambda 0.2 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l5.near\endcsname{0}  % % tempo vicino a Nash, instabile lambda 0.5 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l5.dnash\endcsname{0.11}  % distanza media-Nash, instabile lambda 0.5 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l5.dtasp\endcsname{0.03}  % distanza media-TASP, instabile lambda 0.5 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.l5.dist\endcsname{0.44}  % distanza media da Nash degli stati, instabile lambda 0.5 [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.periods\endcsname{100}  % periodi simulati per gioco [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.s.pure.near\endcsname{7}  % % tempo a <0.05 da Nash, gioco stabile, lambda 0.2, mosse pure [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.s.l5.near.max\endcsname{2}  % % massima di tempo vicino a Nash, gioco stabile, lambda 0.5 (cicla) [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.s.dens.nash\endcsname{38}  % % del tempo osservato in punti della mappa meno densi della proiezione di Nash, stabile lambda 0.2 mix [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.u.dens.max\endcsname{0.1}  % massimo (fra configurazioni instabili, Nash e TASP) della % di tempo in punti meno densi [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.evr.min\endcsname{89}  % varianza spiegata PC1+PC2 minima fra le configurazioni RPS (%) [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.evr.max\endcsname{98}  % varianza spiegata PC1+PC2 massima fra le configurazioni RPS (%) [SIMULATO] | editori/risultati_rps.json
+\expandafter\def\csname val@rps.near.thr\endcsname{0.05}  % soglia di distanza da Nash per 'vicino a Nash' (simplesso) [SIMULATO] | editori/rps_sim.py
+\expandafter\def\csname val@rps.agents\endcsname{8}  % agenti per gruppo simulato (come CFH) [SIMULATO] | editori/rps_sim.py
+\expandafter\def\csname val@cfh.unstable.n\endcsname{5}  % trattamenti instabili in CFH Tab. 2 | editori/cfh2014_tabella2.json
+\expandafter\def\csname val@cfh.unstable.closertasp\endcsname{4}  % trattamenti instabili con media piu vicina al TASP che a Nash | editori/cfh2014_tabella2.json
+\expandafter\def\csname val@horse.imp.tpe\endcsname{96}  % % periodi vicino all'equilibrio perfetto, impulse response [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.rl.tpe\endcsname{21}  % % periodi vicino all'equilibrio perfetto, reinforcement [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.imp.pay\endcsname{3.0}  % payoff totale medio impulse [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.rl.pay\endcsname{2.0}  % payoff totale medio reinforcement [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.eff.max\endcsname{0.5}  % % massima di periodi nella zona efficiente (G3 gioca R), fra le due regole [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.imperf.max\endcsname{0}  % % massima di periodi vicino all'equilibrio imperfetto, fra le due regole [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.imp.evr\endcsname{82}  % varianza spiegata PC1+PC2, impulse (%) [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@horse.rl.evr\endcsname{94}  % varianza spiegata PC1+PC2, reinforcement (%) [SIMULATO] | editori/risultati_cavallo.json
+\expandafter\def\csname val@cfh.stable.n\endcsname{4}  % trattamenti stabili in CFH Tab. 2 | editori/cfh2014_tabella2.json
+\expandafter\def\csname val@horse2.evr\endcsname{91}  % varianza spiegata PC1+PC2 della mappa comune (%) [SIMULATO] | editori/risultati_cavallo_2.json
+\expandafter\def\csname val@horse2.strangers.max\endcsname{0.0}  % % massima di periodi nella zona degli strangers di NSS, fra le due regole [SIMULATO] | editori/risultati_cavallo_2.json
+\expandafter\def\csname val@horse2.dens.max\endcsname{0.1}  % massimo della % di tempo in punti meno densi dei profili umani proiettati [SIMULATO] | editori/risultati_cavallo_2.json
+\expandafter\def\csname val@horse2.imperf.max\endcsname{0}  % % massima di periodi vicino all'equilibrio imperfetto (secondo lancio) [SIMULATO] | editori/risultati_cavallo_2.json
+\expandafter\def\csname val@horse2.thr\endcsname{0.15}  % semi-ampiezza della zona strangers su p1 e p3 | editori/PREREG_CAVALLO_2.md
+\expandafter\def\csname val@nss.str.p1\endcsname{50}  % NSS: % di R del giocatore 1, strangers lungo periodo | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.str.p3\endcsname{70}  % NSS: % di R del giocatore 3, strangers lungo periodo | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.str.p2lo\endcsname{30}  % NSS: % di R del giocatore 2, minimo | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.str.p2hi\endcsname{40}  % NSS: % di R del giocatore 2, massimo | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.part.z2\endcsname{73}  % NSS: % esito imperfetto, partners | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.str.z2\endcsname{41}  % NSS: % esito imperfetto, strangers lungo periodo | editori/nss2025_fatti.json
+\expandafter\def\csname val@nss.imp.periods\endcsname{165}  % NSS: periodi alla convergenza della simulazione impulse response | editori/nss2025_fatti.json
+\expandafter\def\csname val@rpsh.subjects\endcsname{72}  % RPS umani: soggetti nel sottoinsieme pubblico | editori/rps_umani/REGISTRO_RPS_UMANI.md
+\expandafter\def\csname val@rpsh.rounds\endcsname{300}  % RPS umani: round per gruppo | editori/rps_umani/REGISTRO_RPS_UMANI.md
+\expandafter\def\csname val@rpsh.groups\endcsname{12}  % RPS umani: gruppi (ricostruiti) | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.gsize\endcsname{6}  % RPS umani: giocatori per gruppo | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.samesign\endcsname{12}  % RPS umani: gruppi con rotazione dello stesso segno nel simplesso (lisciatura 10) | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.samesign.w5\endcsname{10}  % RPS umani: idem, lisciatura 5 | editori/rps_umani/risultati_rps_umani_w5.json
+\expandafter\def\csname val@rpsh.indiv\endcsname{8}  % RPS umani: gruppi con rotazione significativa da soli (5% non corretto; post hoc) | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.h2.samesign\endcsname{12}  % RPS umani: gruppi con lo stesso segno nella seconda meta' (post hoc) | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.p\endcsname{0.0005}  % RPS umani: p della rotazione nel simplesso (permutazione dell'ordine dei round) | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.perms\endcsname{2,000}  % RPS umani: permutazioni dell'ordine dei round | editori/rps_umani/risultati_rps_umani.json
+\expandafter\def\csname val@rpsh.posmap.samesign\endcsname{12}  % RPS umani: gruppi con rotazione dello stesso segno sulla mappa senza velocita' (post hoc) | editori/rps_umani/risultati_rps_umani.json
+\makeatother

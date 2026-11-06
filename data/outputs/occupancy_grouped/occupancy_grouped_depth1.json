@@ -1,0 +1,54 @@
+{
+  "label": "depth1",
+  "window": 20,
+  "perms": 1000,
+  "n_games": 1711,
+  "all_plies": {
+    "W": {
+      "region": "PC1_low",
+      "sign_train": -1.0,
+      "gap_test_pp": -9.885416666666666,
+      "signed_gap_test_pp": 9.885416666666666,
+      "rb_test": -0.28052083333333333,
+      "n_test_win": 180,
+      "n_test_loss": 160,
+      "placebo_p": 0.000999000999000999,
+      "placebo_p95_pp": 4.502192495764817
+    },
+    "B": {
+      "region": "PC1_high",
+      "sign_train": 1.0,
+      "gap_test_pp": 11.444444444444441,
+      "signed_gap_test_pp": 11.444444444444441,
+      "rb_test": 0.3454513888888888,
+      "n_test_win": 160,
+      "n_test_loss": 180,
+      "placebo_p": 0.001998001998001998,
+      "placebo_p95_pp": 4.327509961830808
+    }
+  },
+  "material_matched": {
+    "W": {
+      "region": "PC1_low",
+      "sign_train": -1.0,
+      "gap_test_pp": -3.8413681237849078,
+      "signed_gap_test_pp": 3.8413681237849078,
+      "rb_test": -0.08322246858832227,
+      "n_test_win": 123,
+      "n_test_loss": 110,
+      "placebo_p": 0.06293706293706294,
+      "placebo_p95_pp": 4.140146195837569
+    },
+    "B": {
+      "region": "PC1_low",
+      "sign_train": -1.0,
+      "gap_test_pp": -8.938072172488756,
+      "signed_gap_test_pp": 8.938072172488756,
+      "rb_test": -0.24818153067678683,
+      "n_test_win": 102,
+      "n_test_loss": 124,
+      "placebo_p": 0.002997002997002997,
+      "placebo_p95_pp": 4.772992954440299
+    }
+  }
+}

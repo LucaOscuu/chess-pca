@@ -1,0 +1,521 @@
+{
+  "antichess": {
+    "inversioni_grezze_puntuali": 14,
+    "inversioni_grezze_robuste": 16,
+    "inversioni_parziali_robuste": 7,
+    "coordinate_parziali_robuste": [
+      "attack_overlap",
+      "hanging_diff",
+      "center_core",
+      "center_ext",
+      "king_safety_diff",
+      "pawns_passed_diff",
+      "cnt_pawn"
+    ],
+    "corr_material_esito": {
+      "ref": 0.5464485193081986,
+      "ref_ci": [
+        0.5344132432175661,
+        0.557933507121727
+      ],
+      "tgt": -0.24391927597413965,
+      "tgt_ci": [
+        -0.27330306211733807,
+        -0.21401113276666028
+      ]
+    },
+    "dettaglio": {
+      "material": {
+        "ref": 0.546,
+        "tgt": -0.244,
+        "ref_ci": [
+          0.534,
+          0.558
+        ],
+        "tgt_ci": [
+          -0.273,
+          -0.214
+        ],
+        "robusta": true
+      },
+      "mobility": {
+        "ref": 0.242,
+        "tgt": -0.08,
+        "ref_ci": [
+          0.233,
+          0.251
+        ],
+        "tgt_ci": [
+          -0.092,
+          -0.067
+        ],
+        "robusta": true
+      },
+      "captures_avail": {
+        "ref": 0.043,
+        "tgt": 0.017,
+        "ref_ci": [
+          0.037,
+          0.05
+        ],
+        "tgt_ci": [
+          0.009,
+          0.026
+        ],
+        "robusta": false
+      },
+      "checks_avail": {
+        "ref": 0.218,
+        "tgt": NaN,
+        "ref_ci": [
+          0.209,
+          0.226
+        ],
+        "tgt_ci": [
+          NaN,
+          NaN
+        ],
+        "robusta": false
+      },
+      "attack_overlap": {
+        "ref": -0.006,
+        "tgt": 0.041,
+        "ref_ci": [
+          -0.007,
+          -0.005
+        ],
+        "tgt_ci": [
+          0.038,
+          0.043
+        ],
+        "robusta": true
+      },
+      "hanging_diff": {
+        "ref": 0.131,
+        "tgt": -0.258,
+        "ref_ci": [
+          0.121,
+          0.141
+        ],
+        "tgt_ci": [
+          -0.274,
+          -0.244
+        ],
+        "robusta": true
+      },
+      "center_core": {
+        "ref": 0.255,
+        "tgt": -0.209,
+        "ref_ci": [
+          0.238,
+          0.271
+        ],
+        "tgt_ci": [
+          -0.232,
+          -0.187
+        ],
+        "robusta": true
+      },
+      "center_ext": {
+        "ref": 0.331,
+        "tgt": -0.3,
+        "ref_ci": [
+          0.314,
+          0.346
+        ],
+        "tgt_ci": [
+          -0.321,
+          -0.279
+        ],
+        "robusta": true
+      },
+      "king_safety_diff": {
+        "ref": 0.279,
+        "tgt": -0.153,
+        "ref_ci": [
+          0.262,
+          0.296
+        ],
+        "tgt_ci": [
+          -0.176,
+          -0.129
+        ],
+        "robusta": true
+      },
+      "pawns_doubled_diff": {
+        "ref": 0.056,
+        "tgt": -0.145,
+        "ref_ci": [
+          0.03,
+          0.082
+        ],
+        "tgt_ci": [
+          -0.17,
+          -0.116
+        ],
+        "robusta": true
+      },
+      "pawns_isolated_diff": {
+        "ref": 0.069,
+        "tgt": -0.098,
+        "ref_ci": [
+          0.045,
+          0.094
+        ],
+        "tgt_ci": [
+          -0.125,
+          -0.069
+        ],
+        "robusta": true
+      },
+      "pawns_passed_diff": {
+        "ref": 0.277,
+        "tgt": -0.288,
+        "ref_ci": [
+          0.25,
+          0.304
+        ],
+        "tgt_ci": [
+          -0.313,
+          -0.263
+        ],
+        "robusta": true
+      },
+      "cnt_pawn": {
+        "ref": 0.282,
+        "tgt": -0.301,
+        "ref_ci": [
+          0.255,
+          0.31
+        ],
+        "tgt_ci": [
+          -0.326,
+          -0.276
+        ],
+        "robusta": true
+      },
+      "cnt_knight": {
+        "ref": 0.1,
+        "tgt": -0.18,
+        "ref_ci": [
+          0.068,
+          0.133
+        ],
+        "tgt_ci": [
+          -0.21,
+          -0.148
+        ],
+        "robusta": true
+      },
+      "cnt_bishop": {
+        "ref": 0.128,
+        "tgt": -0.22,
+        "ref_ci": [
+          0.094,
+          0.16
+        ],
+        "tgt_ci": [
+          -0.249,
+          -0.189
+        ],
+        "robusta": true
+      },
+      "cnt_rook": {
+        "ref": 0.252,
+        "tgt": -0.311,
+        "ref_ci": [
+          0.222,
+          0.282
+        ],
+        "tgt_ci": [
+          -0.342,
+          -0.28
+        ],
+        "robusta": true
+      },
+      "cnt_queen": {
+        "ref": 0.351,
+        "tgt": -0.196,
+        "ref_ci": [
+          0.332,
+          0.368
+        ],
+        "tgt_ci": [
+          -0.224,
+          -0.168
+        ],
+        "robusta": true
+      },
+      "delta_mobility": {
+        "ref": 0.046,
+        "tgt": -0.005,
+        "ref_ci": [
+          0.045,
+          0.048
+        ],
+        "tgt_ci": [
+          -0.007,
+          -0.004
+        ],
+        "robusta": true
+      }
+    }
+  },
+  "3check": {
+    "inversioni_grezze_puntuali": 0,
+    "inversioni_grezze_robuste": 0,
+    "inversioni_parziali_robuste": 1,
+    "coordinate_parziali_robuste": [
+      "mobility"
+    ],
+    "corr_material_esito": {
+      "ref": 0.5464485193081986,
+      "ref_ci": [
+        0.5344132432175661,
+        0.557933507121727
+      ],
+      "tgt": 0.3915580765614312,
+      "tgt_ci": [
+        0.3733805847699643,
+        0.40853348365778863
+      ]
+    },
+    "dettaglio": {
+      "material": {
+        "ref": 0.546,
+        "tgt": 0.392,
+        "ref_ci": [
+          0.534,
+          0.558
+        ],
+        "tgt_ci": [
+          0.373,
+          0.409
+        ],
+        "robusta": false
+      },
+      "mobility": {
+        "ref": 0.242,
+        "tgt": 0.236,
+        "ref_ci": [
+          0.233,
+          0.251
+        ],
+        "tgt_ci": [
+          0.222,
+          0.249
+        ],
+        "robusta": false
+      },
+      "captures_avail": {
+        "ref": 0.043,
+        "tgt": 0.127,
+        "ref_ci": [
+          0.037,
+          0.05
+        ],
+        "tgt_ci": [
+          0.114,
+          0.14
+        ],
+        "robusta": false
+      },
+      "checks_avail": {
+        "ref": 0.218,
+        "tgt": 0.18,
+        "ref_ci": [
+          0.209,
+          0.226
+        ],
+        "tgt_ci": [
+          0.176,
+          0.184
+        ],
+        "robusta": false
+      },
+      "attack_overlap": {
+        "ref": -0.006,
+        "tgt": -0.007,
+        "ref_ci": [
+          -0.007,
+          -0.005
+        ],
+        "tgt_ci": [
+          -0.009,
+          -0.005
+        ],
+        "robusta": false
+      },
+      "hanging_diff": {
+        "ref": 0.131,
+        "tgt": 0.09,
+        "ref_ci": [
+          0.121,
+          0.141
+        ],
+        "tgt_ci": [
+          0.075,
+          0.106
+        ],
+        "robusta": false
+      },
+      "center_core": {
+        "ref": 0.255,
+        "tgt": 0.171,
+        "ref_ci": [
+          0.238,
+          0.271
+        ],
+        "tgt_ci": [
+          0.148,
+          0.195
+        ],
+        "robusta": false
+      },
+      "center_ext": {
+        "ref": 0.331,
+        "tgt": 0.285,
+        "ref_ci": [
+          0.314,
+          0.346
+        ],
+        "tgt_ci": [
+          0.263,
+          0.307
+        ],
+        "robusta": false
+      },
+      "king_safety_diff": {
+        "ref": 0.279,
+        "tgt": 0.329,
+        "ref_ci": [
+          0.262,
+          0.296
+        ],
+        "tgt_ci": [
+          0.303,
+          0.354
+        ],
+        "robusta": false
+      },
+      "pawns_doubled_diff": {
+        "ref": 0.056,
+        "tgt": 0.061,
+        "ref_ci": [
+          0.03,
+          0.082
+        ],
+        "tgt_ci": [
+          0.028,
+          0.092
+        ],
+        "robusta": false
+      },
+      "pawns_isolated_diff": {
+        "ref": 0.069,
+        "tgt": -0.011,
+        "ref_ci": [
+          0.045,
+          0.094
+        ],
+        "tgt_ci": [
+          -0.046,
+          0.023
+        ],
+        "robusta": false
+      },
+      "pawns_passed_diff": {
+        "ref": 0.277,
+        "tgt": 0.172,
+        "ref_ci": [
+          0.25,
+          0.304
+        ],
+        "tgt_ci": [
+          0.138,
+          0.204
+        ],
+        "robusta": false
+      },
+      "cnt_pawn": {
+        "ref": 0.282,
+        "tgt": 0.187,
+        "ref_ci": [
+          0.255,
+          0.31
+        ],
+        "tgt_ci": [
+          0.153,
+          0.219
+        ],
+        "robusta": false
+      },
+      "cnt_knight": {
+        "ref": 0.1,
+        "tgt": 0.054,
+        "ref_ci": [
+          0.068,
+          0.133
+        ],
+        "tgt_ci": [
+          0.017,
+          0.088
+        ],
+        "robusta": false
+      },
+      "cnt_bishop": {
+        "ref": 0.128,
+        "tgt": 0.095,
+        "ref_ci": [
+          0.094,
+          0.16
+        ],
+        "tgt_ci": [
+          0.058,
+          0.132
+        ],
+        "robusta": false
+      },
+      "cnt_rook": {
+        "ref": 0.252,
+        "tgt": 0.174,
+        "ref_ci": [
+          0.222,
+          0.282
+        ],
+        "tgt_ci": [
+          0.145,
+          0.202
+        ],
+        "robusta": false
+      },
+      "cnt_queen": {
+        "ref": 0.351,
+        "tgt": 0.221,
+        "ref_ci": [
+          0.332,
+          0.368
+        ],
+        "tgt_ci": [
+          0.196,
+          0.244
+        ],
+        "robusta": false
+      },
+      "delta_mobility": {
+        "ref": 0.046,
+        "tgt": 0.062,
+        "ref_ci": [
+          0.045,
+          0.048
+        ],
+        "tgt_ci": [
+          0.059,
+          0.065
+        ],
+        "robusta": false
+      }
+    }
+  },
+  "A2_regge": true
+}

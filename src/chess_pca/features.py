@@ -180,12 +180,31 @@ def pawn_structure(b: chess.Board, perspective_color: bool) -> tuple[int, int, i
     return (dP - dO, iP - iO, pP - pO)
 
 
+
+def get_opening_fen(game, opening_ply: int = 12) -> str:
+    """
+    Return a normalized FEN key after a fixed number of plies.
+
+    The key keeps only the first four FEN fields:
+    piece placement, side to move, castling rights, and en-passant square.
+    Move counters are excluded so equivalent opening positions share the same key.
+    """
+    board = game.board()
+
+    for i, move in enumerate(game.mainline_moves()):
+        if i >= opening_ply:
+            break
+        board.push(move)
+
+    return " ".join(board.fen().split()[:4])
+
 def extract_features_both_colors(game, min_moves: int = 10):
     """
     Extract features for BOTH White and Black moves.
     Returns (df_white, df_black) or (None, None) if invalid.
     """
     board = game.board()
+    opening_fen = get_opening_fen(game, opening_ply=12)
     white_rows = []
     black_rows = []
     ply = 0
@@ -254,6 +273,9 @@ def extract_features_both_colors(game, min_moves: int = 10):
     df_white["delta_mobility"] = df_white["mobility"].diff().fillna(0)
     df_black["delta_mobility"] = df_black["mobility"].diff().fillna(0)
 
+    df_white["opening_fen"] = opening_fen
+    df_black["opening_fen"] = opening_fen
+
     return df_white, df_black
 
 
@@ -261,5 +283,9 @@ def numeric_features(df: pd.DataFrame) -> list[str]:
     """
     Return numeric feature columns to use for PCA (exclude ids / indices).
     """
-    cols = [c for c in df.select_dtypes(include=[np.number]).columns if c not in ["ply", "move_num", "game_id"]]
-    return cols
+    excluded = {"ply", "move_num", "game_id", "source_game_id"}
+    return [
+        c
+        for c in df.select_dtypes(include=[np.number]).columns
+        if c not in excluded and not c.lower().endswith("_id")
+    ]

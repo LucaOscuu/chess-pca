@@ -1,0 +1,35 @@
+{
+  "null_p95": 10.671517110332182,
+  "null_mediana": 5.301823741503912,
+  "leva": {
+    "mobility": 62.34999589493317,
+    "pawns_passed_diff": 56.1107716049195,
+    "captures_avail": 54.53158963748045,
+    "cnt_bishop": 42.25265201151929,
+    "cnt_knight": 41.51518395406974,
+    "attack_overlap": 38.971327853729086,
+    "cnt_pawn": 35.91578746404005,
+    "material": 30.27300420357353,
+    "pawns_isolated_diff": 27.413198852560633,
+    "cnt_queen": 15.65795018638022,
+    "checks_avail": 14.883458616680562,
+    "delta_mobility": 12.721398197490787,
+    "center_ext": 11.782052242641523,
+    "king_safety_diff": 9.824375528774606,
+    "hanging_diff": 9.618436896048383,
+    "pawns_doubled_diff": 9.17414012215543,
+    "center_core": 4.177629164364841,
+    "cnt_rook": 3.982128331253288
+  },
+  "sopra_null": 13,
+  "sopra_33_4": [
+    "mobility",
+    "pawns_passed_diff",
+    "captures_avail",
+    "cnt_bishop",
+    "cnt_knight",
+    "attack_overlap",
+    "cnt_pawn"
+  ],
+  "criterio": true
+}

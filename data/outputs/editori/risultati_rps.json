@@ -1,0 +1,202 @@
+[
+ {
+  "game": "S",
+  "lam": 0.2,
+  "mixed": false,
+  "periods": 100,
+  "evr_2d": 0.9042134582452217,
+  "mean_state": [
+   0.243,
+   0.294,
+   0.463
+  ],
+  "dist_mean_to_nash": 0.05782538371147581,
+  "dist_mean_to_tasp": 0.02142349899485942,
+  "mode_state": [
+   0.183,
+   0.276,
+   0.541
+  ],
+  "dist_mode_to_nash": 0.0827036744437322,
+  "dist_mode_to_tasp": 0.11463289251126091,
+  "density_pct_at_nash": 0.56025,
+  "density_pct_at_tasp": 0.6438,
+  "share_time_near_nash": 0.07115294117647059,
+  "mean_dist_from_nash": 0.14761924379178226
+ },
+ {
+  "game": "S",
+  "lam": 0.2,
+  "mixed": true,
+  "periods": 100,
+  "evr_2d": 0.9797137215383134,
+  "mean_state": [
+   0.242,
+   0.286,
+   0.473
+  ],
+  "dist_mean_to_nash": 0.045558357547059704,
+  "dist_mean_to_tasp": 0.03406534903081418,
+  "mode_state": [
+   0.241,
+   0.283,
+   0.476
+  ],
+  "dist_mode_to_nash": 0.04227323020843772,
+  "dist_mode_to_tasp": 0.03776026896677253,
+  "density_pct_at_nash": 0.3761,
+  "density_pct_at_tasp": 0.54685,
+  "share_time_near_nash": 0.4712235294117647,
+  "mean_dist_from_nash": 0.05597396497516482
+ },
+ {
+  "game": "S",
+  "lam": 0.5,
+  "mixed": false,
+  "periods": 100,
+  "evr_2d": 0.9275155009862565,
+  "mean_state": [
+   0.248,
+   0.289,
+   0.463
+  ],
+  "dist_mean_to_nash": 0.0542109104642282,
+  "dist_mean_to_tasp": 0.025528861650674105,
+  "mode_state": [
+   0.137,
+   0.3,
+   0.563
+  ],
+  "dist_mode_to_nash": 0.13855677107017952,
+  "dist_mode_to_tasp": 0.1554437569555628,
+  "density_pct_at_nash": 0.0105,
+  "density_pct_at_tasp": 0.03435,
+  "share_time_near_nash": 0.016505882352941176,
+  "mean_dist_from_nash": 0.17065942586552574
+ },
+ {
+  "game": "S",
+  "lam": 0.5,
+  "mixed": true,
+  "periods": 100,
+  "evr_2d": 0.9451339127634323,
+  "mean_state": [
+   0.246,
+   0.288,
+   0.467
+  ],
+  "dist_mean_to_nash": 0.050277431715045263,
+  "dist_mean_to_tasp": 0.02891883575336124,
+  "mode_state": [
+   0.149,
+   0.286,
+   0.565
+  ],
+  "dist_mode_to_nash": 0.1253677526014213,
+  "dist_mode_to_tasp": 0.15059892467191677,
+  "density_pct_at_nash": 0.00095,
+  "density_pct_at_tasp": 0.00285,
+  "share_time_near_nash": 0.0036941176470588234,
+  "mean_dist_from_nash": 0.15859671823926205
+ },
+ {
+  "game": "Ua",
+  "lam": 0.2,
+  "mixed": false,
+  "periods": 100,
+  "evr_2d": 0.9123363587932416,
+  "mean_state": [
+   0.239,
+   0.341,
+   0.42
+  ],
+  "dist_mean_to_nash": 0.12192466928607672,
+  "dist_mean_to_tasp": 0.042804012976459783,
+  "mode_state": [
+   0.018,
+   0.243,
+   0.739
+  ],
+  "dist_mode_to_nash": 0.33269566451022947,
+  "dist_mode_to_tasp": 0.37199042582109665,
+  "density_pct_at_nash": 0.00055,
+  "density_pct_at_tasp": 0.0003,
+  "share_time_near_nash": 0.00018823529411764707,
+  "mean_dist_from_nash": 0.39291838778176014
+ },
+ {
+  "game": "Ua",
+  "lam": 0.2,
+  "mixed": true,
+  "periods": 100,
+  "evr_2d": 0.9394965691646081,
+  "mean_state": [
+   0.243,
+   0.341,
+   0.416
+  ],
+  "dist_mean_to_nash": 0.1241809371404992,
+  "dist_mean_to_tasp": 0.045446029647688374,
+  "mode_state": [
+   0.042,
+   0.212,
+   0.746
+  ],
+  "dist_mode_to_nash": 0.32414810035188124,
+  "dist_mode_to_tasp": 0.3710913761377454,
+  "density_pct_at_nash": 0.0,
+  "density_pct_at_tasp": 0.0,
+  "share_time_near_nash": 9.411764705882353e-05,
+  "mean_dist_from_nash": 0.38452492574270536
+ },
+ {
+  "game": "Ua",
+  "lam": 0.5,
+  "mixed": false,
+  "periods": 100,
+  "evr_2d": 0.8921539065850373,
+  "mean_state": [
+   0.256,
+   0.323,
+   0.421
+  ],
+  "dist_mean_to_nash": 0.10813803682209143,
+  "dist_mean_to_tasp": 0.034050108261205775,
+  "mode_state": [
+   0.025,
+   0.163,
+   0.812
+  ],
+  "dist_mode_to_nash": 0.3939179132732602,
+  "dist_mode_to_tasp": 0.4472539294434538,
+  "density_pct_at_nash": 0.0,
+  "density_pct_at_tasp": 0.0,
+  "share_time_near_nash": 0.0,
+  "mean_dist_from_nash": 0.44272475916300147
+ },
+ {
+  "game": "Ua",
+  "lam": 0.5,
+  "mixed": true,
+  "periods": 100,
+  "evr_2d": 0.8996220545778854,
+  "mean_state": [
+   0.255,
+   0.323,
+   0.422
+  ],
+  "dist_mean_to_nash": 0.10702812237985446,
+  "dist_mean_to_tasp": 0.03262611501007585,
+  "mode_state": [
+   0.026,
+   0.163,
+   0.811
+  ],
+  "dist_mode_to_nash": 0.393272969646261,
+  "dist_mode_to_tasp": 0.4467338895313712,
+  "density_pct_at_nash": 0.0,
+  "density_pct_at_tasp": 0.0,
+  "share_time_near_nash": 0.0,
+  "mean_dist_from_nash": 0.4400920586676706
+ }
+]

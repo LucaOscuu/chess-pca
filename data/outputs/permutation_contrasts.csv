@@ -1,0 +1,6 @@
+contrasto,n_partite_lato,angolo_oss,null_mediana,null_p95,null_max,b,p
+random vs depth6,1963,33.4,6.2,10.7,16.6,0,0.001
+3check vs depth6,1278,22.8,7.7,14.1,23.8,1,0.002
+full vs depth6,1963,22.5,7.6,17.0,25.6,7,0.008
+depth1 vs depth6,1711,21.4,8.0,14.9,22.4,1,0.002
+depth3 vs depth6,1899,15.6,6.9,13.6,25.0,32,0.033

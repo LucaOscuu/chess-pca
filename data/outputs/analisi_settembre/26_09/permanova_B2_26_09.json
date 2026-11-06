@@ -1,0 +1,17 @@
+{
+  "d": 18,
+  "A_randomizzazione": {
+    "sistema": 0.32002754390602633,
+    "strumento": 0.5072769525642701,
+    "interazione": 0.14319454045047522,
+    "residuo_campionamento": 0.029500963079228497
+  },
+  "B_trasformazioni_monotone": {
+    "sistema": 0.580599210468322,
+    "strumento": 0.1758507748688255,
+    "interazione": 0.19617304539279015,
+    "residuo_campionamento": 0.04737696927006237
+  },
+  "A_ipotesi_strumento_supera_sistema": true,
+  "B_ipotesi_strumento_sotto_sistema": true
+}

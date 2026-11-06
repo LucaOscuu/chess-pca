@@ -1,0 +1,86 @@
+{
+  "I0_tutte": {
+    "W": {
+      "mediana": 7.307817473982729,
+      "min": 5.8728090384337825,
+      "max": 8.142483227110485,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC1_low"
+    },
+    "B": {
+      "mediana": 6.864835181918134,
+      "min": 4.290739144025488,
+      "max": 7.612868481657073,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC1_low"
+    },
+    "regge": true,
+    "d": 18
+  },
+  "I1_senza_leva_alta": {
+    "W": {
+      "mediana": 6.500072811234833,
+      "min": 4.9739387792669145,
+      "max": 7.427167231037266,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC2_low"
+    },
+    "B": {
+      "mediana": 6.585025875412024,
+      "min": 5.604959356459196,
+      "max": 8.184970431825702,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC2_low"
+    },
+    "regge": true,
+    "d": 14,
+    "spearman_con_I0": 0.3535036757974052
+  },
+  "I2_solo_materiale": {
+    "W": {
+      "mediana": 1.1739620818522716,
+      "min": -1.261357167798266,
+      "max": 3.2063580659339634,
+      "quota_sopra_1_6": 0.4,
+      "placebo_p": 0.47952047952047955,
+      "regione_split0": "PC2_low"
+    },
+    "B": {
+      "mediana": 0.8358054551454621,
+      "min": -1.1569208017280537,
+      "max": 2.3662959231970317,
+      "quota_sopra_1_6": 0.15,
+      "placebo_p": 0.4385614385614386,
+      "regione_split0": "PC2_high"
+    },
+    "regge": false,
+    "d": 8,
+    "spearman_con_I0": 0.0640157958510157
+  },
+  "I3_solo_posizionali": {
+    "W": {
+      "mediana": 7.30687561477632,
+      "min": 6.534119783561742,
+      "max": 8.459483007352887,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC1_low"
+    },
+    "B": {
+      "mediana": 7.070423826468186,
+      "min": 6.348443152853061,
+      "max": 8.47845812394204,
+      "quota_sopra_1_6": 1.0,
+      "placebo_p": 0.000999000999000999,
+      "regione_split0": "PC1_low"
+    },
+    "regge": true,
+    "d": 10,
+    "spearman_con_I0": 0.9310960894232285
+  },
+  "affermazione_3": "PARZIALE"
+}

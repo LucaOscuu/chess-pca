@@ -1,0 +1,31 @@
+{
+  "leva_FA": {
+    "mobility": 85.44638487834624,
+    "pawns_passed_diff": 80.03535262118571,
+    "cnt_pawn": 74.10847202163218,
+    "captures_avail": 28.002420577223237,
+    "attack_overlap": 24.309823933668657,
+    "material": 16.628782818062124,
+    "delta_mobility": 15.091697115184282,
+    "center_ext": 13.153399845436448,
+    "checks_avail": 11.30628163307023,
+    "cnt_queen": 9.686409359065088,
+    "cnt_bishop": 9.623960542071258,
+    "pawns_isolated_diff": 9.406461322324335,
+    "king_safety_diff": 8.728092356737376,
+    "center_core": 6.777039880979008,
+    "cnt_knight": 6.321924753779965,
+    "pawns_doubled_diff": 6.185136157624932,
+    "hanging_diff": 4.769276326067909,
+    "cnt_rook": 2.2133999875485815
+  },
+  "top6": [
+    "mobility",
+    "pawns_passed_diff",
+    "cnt_pawn",
+    "captures_avail",
+    "attack_overlap",
+    "material"
+  ],
+  "criterio": true
+}

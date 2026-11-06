@@ -1,0 +1,132 @@
+{
+  "R1": {
+    "principale (livelli, correlazione)": {
+      "differenza_media_pp": 46.82023436333781,
+      "per_evento_pp": [
+        -18.6,
+        -2.0,
+        23.0,
+        14.7,
+        73.0,
+        48.0,
+        81.4,
+        64.7,
+        65.8,
+        82.4,
+        82.4
+      ],
+      "eventi_positivi": 9,
+      "p": 0.0003999200159968006
+    },
+    "livelli, covarianza": {
+      "differenza_media_pp": 46.82023436333781,
+      "per_evento_pp": [
+        -18.6,
+        -2.0,
+        23.0,
+        14.7,
+        73.0,
+        48.0,
+        81.4,
+        64.7,
+        65.8,
+        82.4,
+        82.4
+      ],
+      "eventi_positivi": 9,
+      "p": 0.0003999200159968006
+    },
+    "MK con scadenze come CMT": {
+      "differenza_media_pp": 49.594529034184205,
+      "per_evento_pp": [
+        -17.9,
+        -9.6,
+        48.7,
+        32.1,
+        65.4,
+        48.7,
+        82.1,
+        65.4,
+        65.8,
+        82.4,
+        82.4
+      ],
+      "eventi_positivi": 9,
+      "p": 0.0003999200159968006
+    },
+    "criterio": true,
+    "fuori_campione_1969_1981": {
+      "per_evento_pp": [
+        75.7,
+        50.7,
+        84.0,
+        67.4
+      ]
+    }
+  },
+  "R2": {
+    "mesi": 110,
+    "angolo_percorsi_PCA": 18.824152720698024,
+    "corr_PC1": 0.9844474311235614,
+    "corr_PC2": 0.9394193028482162,
+    "correlazioni_canoniche": [
+      0.9948,
+      0.9867,
+      0.9316,
+      0.7981
+    ],
+    "kappa_regione": 0.808362369337979,
+    "accordo_grezzo": 0.9272727272727272,
+    "criterio": true
+  },
+  "R3": {
+    "MK_1946_1991": {
+      "livelli_vs_variazioni": 12.69754005677262,
+      "IC95": [
+        7.874322797331745,
+        19.68899320627872
+      ],
+      "correlazione_vs_covarianza": 0.994290975152793,
+      "null_split_p95": 9.887747459254046,
+      "null_split_mediana": 4.877842361971041
+    },
+    "CMT_1982_2008": {
+      "livelli_vs_variazioni": 14.347370126544904,
+      "IC95": [
+        9.461850366345194,
+        17.94253683063215
+      ],
+      "correlazione_vs_covarianza": 1.7052012735563078,
+      "null_split_p95": 8.69394485549721,
+      "null_split_mediana": 3.784545025030388
+    },
+    "criterio": false
+  },
+  "R4": {
+    "sistema": 0.15740623638631268,
+    "strumento": 0.26736908269904675,
+    "interazione": 0.15764750999556126,
+    "residuo_campionamento": 0.4175771709190793,
+    "ipotesi_strumento_supera_sistema": true
+  },
+  "R5": {
+    "livelli_vs_variazioni": 28.072351449724323,
+    "IC95": [
+      19.011617977845034,
+      34.104868443801365
+    ],
+    "correlazione_vs_covarianza": 28.706047871223085,
+    "null_split_p95": 10.99078549960751,
+    "null_split_mediana": 5.8015778730202126,
+    "pre_vs_post_Lehman": {
+      "angolo": 31.462920140642623,
+      "null_p95": 15.018072770334518,
+      "p": 0.002997002997002997
+    },
+    "quota_varianza_PC1_PC2": [
+      0.7339671170199381,
+      0.2329493715313794
+    ],
+    "criterio": true
+  }
+}

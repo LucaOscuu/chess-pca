@@ -1,0 +1,13 @@
+n,angolo,null_med,null_p95,p,finestra,contrasto
+1844,39.3,6.2,10.6,0.001,primaria_post_apertura,classica vs depth6
+1805,36.3,6.1,10.5,0.001,primaria_post_apertura,veloci vs depth6
+1980,8.6,5.4,9.8,0.1019,primaria_post_apertura,classica vs full
+1805,13.0,6.1,11.0,0.017,primaria_post_apertura,veloci vs full
+1805,6.9,5.3,8.9,0.2108,primaria_post_apertura,classica vs veloci
+1844,30.8,6.9,12.0,0.001,primaria_post_apertura,full vs depth6
+1963,22.9,5.9,12.1,0.001,secondaria_0_19,classica vs depth6
+1963,28.0,6.2,12.7,0.001,secondaria_0_19,veloci vs depth6
+2420,8.9,6.1,14.8,0.2607,secondaria_0_19,classica vs full
+2009,16.2,6.3,16.4,0.0559,secondaria_0_19,veloci vs full
+2009,8.7,4.7,9.6,0.0739,secondaria_0_19,classica vs veloci
+1963,27.7,7.1,14.4,0.001,secondaria_0_19,full vs depth6

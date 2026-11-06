@@ -1,0 +1,87 @@
+{
+ "completo": {
+  "B_bacino_abilita": {
+   "rho_mediana": 0.198,
+   "rho_min_max": [
+    0.081,
+    0.235
+   ],
+   "p_mediana": 0.005,
+   "quota_split_p05": 1.0,
+   "beta_abilita_solo": 0.29,
+   "beta_abilita_con_bacino": 0.222,
+   "beta_bacino": 0.381,
+   "bacini_scelti": {
+    "PC1_low+": 8,
+    "PC2_low+": 6,
+    "PC1_high+": 5,
+    "PC2_high+": 1
+   },
+   "n_traiettorie_test": 1539
+  },
+  "C_learning_direction": {
+   "direzione_u": [
+    -0.909,
+    -0.416
+   ],
+   "C1_delta_bid_errore_meno_senza": [
+    -0.1425,
+    0.0002
+   ],
+   "C1_n_trader": 852,
+   "C2_proiezione_errore_meno_senza": [
+    0.6401,
+    0.0002
+   ],
+   "C2_n_trader": 1259,
+   "C2_media_dopo_errore": 0.3262,
+   "C2_media_senza": -0.3139,
+   "C3_alta_meno_bassa": -0.0284,
+   "C3_p": 0.6223,
+   "C3_alta": 0.6255,
+   "C3_bassa": 0.6539
+  }
+ },
+ "solo_comportamento": {
+  "B_bacino_abilita": {
+   "rho_mediana": 0.083,
+   "rho_min_max": [
+    0.028,
+    0.125
+   ],
+   "p_mediana": 0.005,
+   "quota_split_p05": 1.0,
+   "beta_abilita_solo": 0.295,
+   "beta_abilita_con_bacino": 0.277,
+   "beta_bacino": 0.291,
+   "bacini_scelti": {
+    "PC2_high+": 18,
+    "PC1_low+": 1,
+    "PC2_low+": 1
+   },
+   "n_traiettorie_test": 1541
+  },
+  "C_learning_direction": {
+   "direzione_u": [
+    -0.714,
+    0.701
+   ],
+   "C1_delta_bid_errore_meno_senza": [
+    -0.1317,
+    0.0002
+   ],
+   "C1_n_trader": 879,
+   "C2_proiezione_errore_meno_senza": [
+    0.7444,
+    0.0002
+   ],
+   "C2_n_trader": 1260,
+   "C2_media_dopo_errore": 0.4256,
+   "C2_media_senza": -0.3188,
+   "C3_alta_meno_bassa": -0.0115,
+   "C3_p": 0.863,
+   "C3_alta": 0.7385,
+   "C3_bassa": 0.75
+  }
+ }
+}
