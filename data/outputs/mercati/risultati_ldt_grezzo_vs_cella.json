@@ -1,0 +1,58 @@
+{
+ "completo|proj~err": {
+  "beta_entro_cella": 0.0088,
+  "ic95": [
+   -0.0429,
+   0.0604
+  ],
+  "beta_grezzo": 0.2957,
+  "ic95_grezzo": [
+   0.2455,
+   0.3437
+  ],
+  "sd_y": 1.1514,
+  "n": 13860
+ },
+ "completo|dbid~over": {
+  "beta_entro_cella": 0.149,
+  "ic95": [
+   0.1138,
+   0.1857
+  ],
+  "beta_grezzo": -0.0351,
+  "ic95_grezzo": [
+   -0.0645,
+   -0.0085
+  ],
+  "sd_y": 0.5827,
+  "n": 8957
+ },
+ "solo_comportamento|proj~err": {
+  "beta_entro_cella": -0.0044,
+  "ic95": [
+   -0.0624,
+   0.0555
+  ],
+  "beta_grezzo": 0.4371,
+  "ic95_grezzo": [
+   0.3769,
+   0.5015
+  ],
+  "sd_y": 1.3595,
+  "n": 13968
+ },
+ "solo_comportamento|dbid~over": {
+  "beta_entro_cella": 0.1195,
+  "ic95": [
+   0.0834,
+   0.1556
+  ],
+  "beta_grezzo": -0.0653,
+  "ic95_grezzo": [
+   -0.0926,
+   -0.0384
+  ],
+  "sd_y": 0.6058,
+  "n": 9092
+ }
+}

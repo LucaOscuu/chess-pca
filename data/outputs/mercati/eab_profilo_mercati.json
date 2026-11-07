@@ -1,0 +1,21 @@
+{
+ "regione": "PC1_low",
+ "segno": 1.0,
+ "gap_test_pp": 7.54,
+ "n_dentro": 2226,
+ "n_fuori": 5771,
+ "quota_periodi_con_acquisti": {
+  "dentro": 0.1532,
+  "fuori": 0.7335
+ },
+ "log_prezzo_acquisto_vs_valore_se_acquista": {
+  "dentro": -0.4019,
+  "fuori": 0.2398,
+  "n_dentro": 341,
+  "n_fuori": 4233
+ },
+ "quota_ordini_al_mercato_se_ordina": {
+  "dentro": 0.0891,
+  "fuori": 0.3659
+ }
+}
