@@ -191,4 +191,4 @@ If you use this code, please cite the thesis (see `CITATION.cff`):
 
 ## Contact
 
-Luca Osculati — luca.osculati@edu.escp.eu
+Luca Osculati — osculatiluca21@gmail.com
