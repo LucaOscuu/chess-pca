@@ -65,6 +65,9 @@ def main():
     print("controllo OK; varianza spiegata PC1, PC2 (%):", share.round(1))
     print(L.round(3))
     L.round(4).to_csv(ROOT / "paper/figures/fig_chess_loadings.csv")
+    (ROOT / "data/outputs/occupancy_grouped/fig_chess_loadings_evr.json").write_text(json.dumps(
+        {"evr_pc1_pct": round(float(share[0]), 2), "evr_pc2_pct": round(float(share[1]), 2),
+         "evr_pc12_pct": round(float(share[:2].sum()), 2), "nota": "meta di training della mappa di Fishtest (Fig. occupancy)"}, indent=1), encoding="utf-8")
 
     order = L["PC1"].abs().sort_values().index      # dal piu piccolo al piu grande, dal basso verso l'alto
     y = np.arange(len(order))

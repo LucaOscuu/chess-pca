@@ -494,9 +494,22 @@ def chess_design():
     add("flow.cl.fa.dec1040.p", pval(J(s, "decisive_e_10_40", "classica vs veloci", "p")), s, "p decisive e righe 10-40")
 
 
+def additions_0711():
+    """Chiavi aggiunte il 07/11/2026 (prima definite a mano nel preambolo del .tex)."""
+    s = "occupancy_grouped/fig_chess_loadings_evr.json"
+    add("chess.full.evr12", f(J(s, "evr_pc12_pct"), 0), s, "% varianza PC1+PC2, mappa di Fishtest (meta di training)")
+    s = "mercati/eab_profilo_mercati.json"
+    add("mkt.eab.buy.in", pp(J(s, "quota_periodi_con_acquisti", "dentro"), 0), s, "% periodi con acquisti dentro l'EAB (test, ricchezza appaiata)")
+    add("mkt.eab.buy.out", pp(J(s, "quota_periodi_con_acquisti", "fuori"), 0), s, "% periodi con acquisti fuori dall'EAB")
+    add("mkt.eab.bdev.in", f(J(s, "log_prezzo_acquisto_vs_valore_se_acquista", "dentro"), 2), s, "log prezzo d'acquisto/valore, se acquista, dentro l'EAB")
+    add("mkt.eab.bdev.out", f(J(s, "log_prezzo_acquisto_vs_valore_se_acquista", "fuori"), 2), s, "log prezzo d'acquisto/valore, se acquista, fuori")
+    add("mkt.eab.mo.in", pp(J(s, "quota_ordini_al_mercato_se_ordina", "dentro"), 0), s, "% ordini al mercato, se ordina, dentro l'EAB")
+    add("mkt.eab.mo.out", pp(J(s, "quota_ordini_al_mercato_se_ordina", "fuori"), 0), s, "% ordini al mercato, se ordina, fuori")
+
+
 # ================================================================ main
 def main():
-    for fn in (corpora, chess_structure, chess_occupancy, chess_humans, chess_robustness, chess_design, markets, editors, rps_humans):
+    for fn in (corpora, chess_structure, chess_occupancy, chess_humans, chess_robustness, chess_design, markets, editors, rps_humans, additions_0711):
         fn()
     lines = [
         "% FILE GENERATO DA paper/tools/make_numbers.py -- NON MODIFICARE A MANO",

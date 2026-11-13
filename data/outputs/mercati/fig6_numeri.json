@@ -1,0 +1,97 @@
+{
+ "gap_check": 7.54,
+ "per_period": {
+  "1": {
+   "win": 26.1,
+   "lose": 22.9
+  },
+  "2": {
+   "win": 30.3,
+   "lose": 19.8
+  },
+  "3": {
+   "win": 31.2,
+   "lose": 20.7
+  },
+  "4": {
+   "win": 28.0,
+   "lose": 23.4
+  },
+  "5": {
+   "win": 32.3,
+   "lose": 26.9
+  },
+  "6": {
+   "win": 31.6,
+   "lose": 26.1
+  },
+  "7": {
+   "win": 30.1,
+   "lose": 26.4
+  },
+  "8": {
+   "win": 31.2,
+   "lose": 27.1
+  },
+  "9": {
+   "win": 38.0,
+   "lose": 30.4
+  },
+  "10": {
+   "win": 38.3,
+   "lose": 30.7
+  }
+ },
+ "profile": {
+  "Units bought": {
+   "sd_diff": -0.8,
+   "inside": 0.018,
+   "outside": 0.208
+  },
+  "Purchase price vs value": {
+   "sd_diff": -0.61,
+   "inside": -0.062,
+   "outside": 0.176
+  },
+  "Share of market orders": {
+   "sd_diff": -0.87,
+   "inside": 0.07,
+   "outside": 0.358
+  },
+  "Bids placed": {
+   "sd_diff": -0.95,
+   "inside": 0.406,
+   "outside": 1.068
+  },
+  "Asset holdings": {
+   "sd_diff": -0.97,
+   "inside": 0.454,
+   "outside": 1.15
+  },
+  "Cash": {
+   "sd_diff": 0.94,
+   "inside": 1.214,
+   "outside": 0.932
+  },
+  "Ask price vs value": {
+   "sd_diff": -0.44,
+   "inside": 0.153,
+   "outside": 0.391
+  },
+  "Units sold": {
+   "sd_diff": -0.27,
+   "inside": 0.107,
+   "outside": 0.171
+  }
+ },
+ "ldt": {
+  "completo|proj~err": {
+   "raw_sd": 0.257,
+   "cell_sd": 0.008
+  },
+  "completo|dbid~over": {
+   "raw_sd": -0.06,
+   "cell_sd": 0.256
+  }
+ }
+}
